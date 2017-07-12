@@ -2,7 +2,12 @@
     outline: 1px solid black;
 }
 
+html {
+    height: 100vh;
+}
+
 body {
+    min-height: 100vh;
     max-width: 960px;
     margin: 0 auto;
 }
