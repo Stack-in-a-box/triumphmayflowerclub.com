@@ -1,4 +1,4 @@
-* {
+header, nav, main article, main aside, footer {
     outline: 1px solid black;
 }
 
@@ -17,6 +17,11 @@ body {
     flex-direction: column;
     position: relative;
     min-height: 100vh;
+    outline: 2px solid black;
+}
+
+header img {
+    margin-left: -1px;
 }
 
 nav ul {
