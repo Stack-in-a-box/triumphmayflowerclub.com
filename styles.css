@@ -24,6 +24,10 @@ nav ul {
     list-style-type: none;
 }
 
+nav ul li {
+    padding-right: 20px;
+}
+
 main {
     display: flex;
     padding-bottom: 50px;
@@ -32,17 +36,20 @@ main {
 
 main article {
     flex: 1;
+    padding: 10px 20px;
 }
 
 main aside {
-    width: 250px;
+    width: 230px;
+    padding: 10px 20px;
 }
 
 footer {
     position: absolute;
     bottom: 0;
     height: 50px;
-    width: 100%;
+    width: calc(100% - 40px);
+    padding: 0 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
