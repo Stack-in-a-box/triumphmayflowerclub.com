@@ -30,6 +30,7 @@ nav {
 
 nav ul {
     display: flex;
+    padding-left: 20px;
     flex: 1;
     list-style-type: none;
 }
@@ -39,7 +40,7 @@ nav ul li {
 }
 
 nav #search {
-    padding: 15px;
+    padding: 15px 20px;
 }
 
 main {
