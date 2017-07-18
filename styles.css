@@ -24,13 +24,22 @@ header img {
     margin-left: -1px;
 }
 
+nav {
+    display: flex;
+}
+
 nav ul {
     display: flex;
+    flex: 1;
     list-style-type: none;
 }
 
 nav ul li {
     padding-right: 20px;
+}
+
+nav #search {
+    padding: 15px;
 }
 
 main {
