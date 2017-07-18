@@ -69,11 +69,21 @@ main aside #slideshow {
 }
 
 footer {
+    display: flex;
+    align-items: center;
     position: absolute;
     bottom: 0;
     height: 50px;
     width: calc(100% - 40px);
     padding: 0 20px;
+}
+
+footer #copyright {
+    flex: 1;
+}
+
+footer #developer {
+    font-style: italic;
 }
 
 h1, h2, h3, h4, h5, h6 {
