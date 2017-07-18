@@ -134,3 +134,16 @@ h1 {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
 }
+
+.contact {
+    display: flex;
+    margin-top: 15px;
+}
+
+.contact .contactDetails {
+    flex: 1;
+}
+
+.contact .contactDetails h3 {
+    margin-top: 0;
+}
