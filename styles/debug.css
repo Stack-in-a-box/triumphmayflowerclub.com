@@ -1,0 +1,7 @@
+header, nav, main article, main aside, footer {
+    outline: 1px solid black;
+}
+
+#content {
+    outline: 2px solid black;
+}

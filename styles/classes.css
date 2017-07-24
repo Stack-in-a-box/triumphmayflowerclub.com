@@ -1,0 +1,51 @@
+.card {
+    margin-bottom: 20px;
+    padding: 0 10px;
+    border: 1px dashed black;
+}
+
+.card h3 {
+    margin: 10px 0 0 0;
+}
+
+.card h4 {
+    margin: 4px 0 0 0;
+}
+
+.card .metadata {
+    margin-top: 8px;
+}
+
+.card p {
+    margin: 8px 0 10px;
+    font-size: small;
+}
+
+.author, .date {
+    font-style: italic;
+}
+
+.interpunct {
+    margin-left: 2px;
+    font-weight: bolder;
+}
+
+.clamped {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.contact {
+    display: flex;
+    margin-top: 15px;
+}
+
+.contact .contactDetails {
+    flex: 1;
+}
+
+.contact .contactDetails h3 {
+    margin-top: 0;
+}
