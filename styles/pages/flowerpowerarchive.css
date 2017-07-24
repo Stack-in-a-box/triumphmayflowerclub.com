@@ -1,0 +1,21 @@
+main h3 {
+    text-align: center;
+}
+
+.issuePreview {
+    display: flex;
+}
+
+.issuePreview .frontCover {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.issuePreview .contentsPage {
+    flex: 1;
+    margin-left: 5px;
+}
+
+.issuePreview img {
+    max-width: 100%;
+}
