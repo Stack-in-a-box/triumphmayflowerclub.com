@@ -1,8 +1,4 @@
 main aside #slideshow {
     height: 160px;
     line-height: 160px;
-    text-align: center;
-    vertical-align: middle;
-    outline: 1px solid black;
-    background: aliceblue;
 }
