@@ -1,8 +1,8 @@
-main h2 {
+article h2 {
     margin: 32px 0 12px;
 }
 
-main h3 {
+article h3 {
     margin: 10px 0 7px;
     text-align: center;
 }
