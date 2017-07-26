@@ -30,13 +30,6 @@
     font-weight: bolder;
 }
 
-.clamped {
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-}
-
 .contact {
     display: flex;
     margin-top: 15px;
