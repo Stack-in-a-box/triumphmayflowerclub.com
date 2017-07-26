@@ -24,3 +24,8 @@ main h3 {
 .issuePreview img {
     max-width: 100%;
 }
+
+.imagePlaceholder {
+    height: 450px;
+    line-height: 450px;
+}
