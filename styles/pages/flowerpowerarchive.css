@@ -1,4 +1,9 @@
+main h2 {
+    margin: 32px 0 12px;
+}
+
 main h3 {
+    margin: 0 0 7px;
     text-align: center;
 }
 
