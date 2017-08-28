@@ -9,8 +9,13 @@
 
 section {
     display: table-cell;
-    padding-right: 20px;
+    padding-right: 10px;
     width: 50%;
+}
+
+section + section {
+    padding-right: 0;
+    padding-left: 10px;
 }
 
 .listingDetails {
@@ -30,6 +35,10 @@ section {
     font-weight: bold;
     background: red;
     color: white;
+}
+
+article img {
+    height: 200px;
 }
 
 .imagePlaceholder {
