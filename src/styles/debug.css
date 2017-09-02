@@ -12,3 +12,8 @@ header, nav, main article, main aside, footer {
     outline: 1px solid black;
     background: aliceblue;
 }
+
+.disableListStyles {
+    list-style-type: none;
+    padding: 0;
+}
