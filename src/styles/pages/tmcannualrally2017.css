@@ -1,0 +1,16 @@
+main article img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+aside ul {
+    text-align: center;
+}
+
+aside ul li h3 {
+    margin-bottom: 1px;
+}
+
+aside ul li .numberPlateMarker {
+    margin-bottom: 7px;
+}
