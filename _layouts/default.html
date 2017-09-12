@@ -10,5 +10,36 @@
         <link href="text.css" rel="stylesheet" type="text/css">
         <link href="debug.css" rel="stylesheet" type="text/css">
     </head>
-    {{ content }}
+    <body>
+        <div id="content">
+            <header>
+                <a href="index.html">
+                    <img src="logo.png" alt="TMC Website Logo">
+                </a>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="documents.html">Documents</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="links.html">Links</a></li>
+                </ul>
+                <div id="search">
+                    <input type="search">
+                    <button>Search</button>
+                </div>
+            </nav>
+            {{ content }}
+            <footer>
+                <span id="copyright">Copyright © Triumph Mayflower Club 2005-{{ "now" | date: "%Y" }}</span>
+                <span id="developer">Website designed and maintained by <a href="mailto:dev@stackinabox.com?subject=Triumph%20Mayflower%20Club%20Website">Andy Davies</a></span>
+            </footer>
+        </div>
+    </body>
 </html>
