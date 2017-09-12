@@ -1,0 +1,19 @@
+header, nav, main article, main aside, footer {
+    outline: 1px solid black;
+}
+
+#content {
+    outline: 2px solid black;
+}
+
+.imagePlaceholder {
+    text-align: center;
+    vertical-align: middle;
+    outline: 1px solid black;
+    background: aliceblue;
+}
+
+.disableListStyles {
+    list-style-type: none;
+    padding: 0;
+}
