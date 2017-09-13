@@ -8,5 +8,5 @@ h1 {
 
 @font-face {
     font-family: "uknumberplate";
-    src: url("fonts/uknumberplate.woff") format("woff");
+    src: url("uknumberplate.woff") format("woff");
 }
