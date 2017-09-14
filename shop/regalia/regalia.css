@@ -1,0 +1,47 @@
+#listings {
+    display: table;
+    width: 100%;
+}
+
+.listingRow {
+    display: table-row;
+}
+
+section {
+    display: table-cell;
+    padding-right: 10px;
+    width: 50%;
+}
+
+section + section {
+    padding-right: 0;
+    padding-left: 10px;
+}
+
+.listingDetails {
+    display: flex;
+    align-items: center;  
+}
+
+.outOfStockMarker:before {
+    content: "Out of stock";
+}
+
+.outOfStockMarker {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 5px 3px 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background: red;
+    color: white;
+}
+
+article img {
+    height: 200px;
+}
+
+.imagePlaceholder {
+    height: 200px;
+    line-height: 200px;
+}
