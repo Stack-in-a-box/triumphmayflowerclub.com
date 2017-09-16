@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}Andy Davies{% endif %}">
+        <meta name="description" content="The Triumph Mayflower Club exists to keep these wonderful and unique vehicles on the road and to provide a small part of the motoring heritage for the future.">
+        <title>{{ page.title }} · Triumph Mayflower Club</title>
+        <link href="{{ site.baseurl }}/common.css" rel="stylesheet" type="text/css">
+        <link href="{{ site.baseurl }}/classes.css" rel="stylesheet" type="text/css">
+        <link href="{{ site.baseurl }}/text.css" rel="stylesheet" type="text/css">
+        <link href="{{ site.baseurl }}/debug.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <a href="{{ site.baseurl }}/index.html">
+                    <img src="{{ site.baseurl }}/logo.png" alt="TMC Website Logo">
+                </a>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="{{ site.baseurl }}/index.html">About</a></li>
+                    <li><a href="{{ site.baseurl }}/history/history.html">History</a></li>
+                    <li><a href="{{ site.baseurl }}/news/news.html">News</a></li>
+                    <li><a href="{{ site.baseurl }}/events/events.html">Events</a></li>
+                    <li><a href="{{ site.baseurl }}/photos/photos.html">Photos</a></li>
+                    <li><a href="{{ site.baseurl }}/documents/documents.html">Documents</a></li>
+                    <li><a href="{{ site.baseurl }}/shop/shop.html">Shop</a></li>
+                    <li><a href="{{ site.baseurl }}/forum/forum.html">Forum</a></li>
+                    <li><a href="{{ site.baseurl }}/contact/contact.html">Contact</a></li>
+                    <li><a href="{{ site.baseurl }}/links/links.html">Links</a></li>
+                </ul>
+                <div id="search">
+                    <input type="search">
+                    <button>Search</button>
+                </div>
+            </nav>
+            <main>
+                <article>
+                    <h1>Events in {{ page.region }}</h1>
+                    <p>Page content...</p>
+                </article>
+                <aside>
+                    <section>
+                        <h2>No details available</h2>
+                        <p>Unfortunately, we don’t have any details for this region at present. If you feel you could compile a calendar or someone you know would like to compile one (by searching the internet or by other means), please send details in the format opposite to Rob Davies for inclusion on this page.</p>
+                        <p>If you know of events in this region that you feel <em>should</em> be included here, again, please let Rob know and we’ll get them added.</p>
+                        <section>
+                            <h3>Rob Davies</h3>
+                            <p>Phone: <a href="tel:+441291623388">(01291) 623388</a></p>
+                            <p>Email: <a href="mailto:robertldavies@btinternet.com?subject=Missing%20TMC%20Events%20Details">robertldavies@btinternet.com</a></p>
+                        </section>
+                    </section>
+                </aside>
+            </main>
+            <footer>
+                <span id="copyright">Copyright © Triumph Mayflower Club 2005-{{ "now" | date: "%Y" }}</span>
+                <span id="developer">Website designed and maintained by <a href="mailto:dev@stackinabox.com?subject=Triumph%20Mayflower%20Club%20Website">Andy Davies</a></span>
+            </footer>
+        </div>
+    </body>
+</html>
