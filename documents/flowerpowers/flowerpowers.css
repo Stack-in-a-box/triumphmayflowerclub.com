@@ -2,13 +2,13 @@ article h2 {
     margin: 32px 0 12px;
 }
 
-article h3 {
-    margin: 10px 0 7px;
-    text-align: center;
-}
-
 .issuePreview {
     display: flex;
+}
+
+.issuePreview h3 {
+    margin: 10px 0 7px;
+    text-align: center;
 }
 
 .issuePreview .frontCover {
@@ -23,9 +23,4 @@ article h3 {
 
 .issuePreview img {
     max-width: 100%;
-}
-
-.imagePlaceholder {
-    height: 450px;
-    line-height: 450px;
 }
