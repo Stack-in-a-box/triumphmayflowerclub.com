@@ -30,16 +30,16 @@
     font-weight: bolder;
 }
 
-.contact {
+.panelWithRightJustifiedImage {
     display: flex;
     margin-top: 15px;
 }
 
-.contact .contactDetails {
+.panelWithRightJustifiedImage .content {
     flex: 1;
 }
 
-.contact .contactDetails h3 {
+.panelWithRightJustifiedImage h3 {
     margin-top: 0;
 }
 
