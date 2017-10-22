@@ -11,7 +11,7 @@
         <link href="{{ site.baseurl }}/debug.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div id="content">
+        <div id="container">
             <header>
                 <a href="{{ site.baseurl }}/index.html">
                     <img src="{{ site.baseurl }}/logo.png" alt="TMC Website Logo">
@@ -37,8 +37,22 @@
             </nav>
             <main>
                 <article>
-                    <h1>Events in {{ page.region }}</h1>
-                    <p>Page content...</p>
+                    <ol id="breadcrumb">
+                        <li>
+                            <a href="{{ site.baseurl }}/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="{{ site.baseurl }}/events/events.html">Events</a>
+                        </li>
+                        <li>
+                            <a href="{{ site.baseurl }}/events/calendars/calendars.html">Calendars</a>
+                        </li>
+                        <li>{{ page.region }}</li>
+                    </ol>
+                    <div id="content">
+                        <h1>Events in {{ page.prefix }}{{ page.region }}</h1>
+                        <p>Page content...</p>
+                    </div>
                 </article>
                 <aside>
                     <section>
@@ -53,7 +67,7 @@
                     </section>
                 </aside>
             </main>
-            <footer>
+            <footer id="footer">
                 <span id="copyright">Copyright © Triumph Mayflower Club 2005-{{ "now" | date: "%Y" }}</span>
                 <span id="developer">Website designed and maintained by <a href="mailto:dev@stackinabox.com?subject=Triumph%20Mayflower%20Club%20Website">Andy Davies</a></span>
             </footer>
