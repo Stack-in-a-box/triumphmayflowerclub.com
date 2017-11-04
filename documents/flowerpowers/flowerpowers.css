@@ -2,10 +2,6 @@ article h3 {
     margin: 32px 0 12px;
 }
 
-aside img {
-    width: 100%;
-}
-
 .issuePreview {
     display: flex;
 }

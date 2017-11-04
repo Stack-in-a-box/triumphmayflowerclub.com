@@ -7,13 +7,13 @@
     display: table-row;
 }
 
-section {
+article section {
     display: table-cell;
     padding-right: 10px;
     width: 50%;
 }
 
-section + section {
+article section + section {
     padding-right: 0;
     padding-left: 10px;
 }
@@ -39,9 +39,4 @@ section + section {
 
 article img {
     height: 200px;
-}
-
-.imagePlaceholder {
-    height: 200px;
-    line-height: 200px;
 }
