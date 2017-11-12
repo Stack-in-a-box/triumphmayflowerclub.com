@@ -1,0 +1,22 @@
+article section {
+    display: flex;
+}
+
+article section + section {
+    margin-top: 30px;
+}
+
+article section img {
+    width: 180px;
+    margin-right: 10px;
+}
+
+#octocat {
+    position: relative;
+    top: 40px;
+}
+
+#tssc {
+    position: relative;
+    top: 25px;
+}
