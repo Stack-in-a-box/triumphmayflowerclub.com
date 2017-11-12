@@ -26,3 +26,15 @@ th, td {
     list-style-type: none;
     padding: 0;
 }
+
+.sectionNotStarted {
+    color: red;
+}
+
+.sectionInProgress {
+    color: orange;
+}
+
+.sectionComplete {
+    color: green;
+}
