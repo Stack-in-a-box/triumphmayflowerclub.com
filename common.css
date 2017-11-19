@@ -57,7 +57,12 @@ aside img {
 }
 
 #search {
+    display: flex;
     padding: 15px 20px;
+}
+
+#search button {
+    margin-left: 5px;
 }
 
 #breadcrumb {
