@@ -98,6 +98,10 @@ aside img {
     flex: 1;
 }
 
+#updated {
+    padding: 0 55px;
+}
+
 #developer {
     font-style: italic;
 }
