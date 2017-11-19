@@ -23,20 +23,6 @@ article section + section {
     align-items: center;  
 }
 
-.outOfStockMarker:before {
-    content: "Out of stock";
-}
-
-.outOfStockMarker {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 5px 5px 3px 5px;
-    font-family: sans-serif;
-    font-weight: bold;
-    background: red;
-    color: white;
-}
-
 article img {
     height: 200px;
 }
