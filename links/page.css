@@ -8,15 +8,75 @@ article section + section {
 
 article section img {
     width: 180px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
-#octocat {
+#oldTmcWebsiteLogo {
+    position: relative;
+    top: 60px;
+}
+
+#triumphSportsSixClubLogo {
+    position: relative;
+    top: 30px;
+}
+
+#standardMotorClubLogo {
+    position: relative;
+    top: 30px;
+}
+
+#triumphRoadsterClubLogo {
+    position: relative;
+    top: 65px;
+}
+
+#triumphRazoredgeOwnersClubLogo {
+    position: relative;
+    top: 65px;
+}
+
+#clubTriumphHollandLogo {
     position: relative;
     top: 40px;
 }
 
-#tssc {
+#triumphWorldLogo {
+    position: relative;
+    top: 115px;
+}
+
+#historiansWebsiteLogo {
+    position: relative;
+    top: 100px;
+}
+
+#standardTriumphForumLogo {
+    position: relative;
+    top: 125px;
+}
+
+#clubTriumphLogo {
+    position: relative;
+    top: 50px;
+}
+
+#carAndClassicLogo {
+    position: relative;
+    top: 40px;
+}
+
+#classicMotorsportsLogo {
+    position: relative;
+    top: 75px;
+}
+
+#triumph2000250025RegisterLogo {
     position: relative;
     top: 25px;
+}
+
+#githubLogo {
+    position: relative;
+    top: 45px;
 }
