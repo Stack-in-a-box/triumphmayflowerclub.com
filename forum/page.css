@@ -1,0 +1,29 @@
+article section {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+article section img {
+    width: 180px;
+    margin-right: 20px;
+}
+
+#phpbb {
+    position: relative;
+    top: 80px;
+}
+
+#vanilla {
+    position: relative;
+    top: 55px;
+}
+
+#discourse {
+    position: relative;
+    top: 65px;
+}
+
+#flarum {
+    position: relative;
+    top: 125px;
+}
