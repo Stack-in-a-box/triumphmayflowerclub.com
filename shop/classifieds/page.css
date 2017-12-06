@@ -1,0 +1,8 @@
+article section .listing {
+    display: flex;
+    align-items: center;
+}
+
+article section .listing img {
+    margin-right: 20px;
+}
