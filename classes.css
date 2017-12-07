@@ -43,6 +43,10 @@
     margin-top: 0;
 }
 
+.panelWithRightJustifiedImage h4 {
+    margin-top: 5px;
+}
+
 .fullWidthArticleImage {
     width: 100%;
 }
