@@ -1,0 +1,24 @@
+article h2 {
+    padding-top: 15px;
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    outline: none;
+    padding: 5px;
+}
+
+td:nth-child(1) {
+    text-align: right;
+    font-weight: bold;
+}
+
+td:nth-child(2) {
+    text-align: left;
+    font-style: italic;
+}
