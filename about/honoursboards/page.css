@@ -4,12 +4,12 @@ article h2 {
 }
 
 table {
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
 }
 
 td {
     outline: none;
+    width: 50%;
     padding: 5px;
 }
 
