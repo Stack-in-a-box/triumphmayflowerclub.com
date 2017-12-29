@@ -1,0 +1,53 @@
+.jumpToCountryLink {
+    display: flex;
+    align-items: center;
+}
+
+.jumpToCountryLink h3 {
+    flex: 1;
+    margin: 0;
+}
+
+.jumpToCountryLink img {
+    width: 85px;
+    margin: 5px 0;
+}
+
+#map {
+    position: relative;
+    height: 440px;
+}
+
+#map > * {
+    position: absolute;
+}
+
+#triumphGlobe {
+    left: 90px;
+}
+
+#africaMapLink {
+    top: 245px;
+    left: 80px;
+}
+
+#asiaMapLink {
+    top: 105px;
+    left: 495px;
+}
+
+#australasiaMapLink {
+    top: 320px;
+    left: 480px;
+}
+
+#europeMapLink {
+    top: 70px;
+    left: -5px;
+    text-align: center;
+}
+
+#northAndSouthAmericaMapLink {
+    top: 20px;
+    left: 15px;
+}
