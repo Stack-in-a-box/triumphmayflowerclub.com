@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1280"
+   height="640"
+   viewBox="0 0 10080 5040"
+   version="1.1"
+   id="svg32"
+   sodipodi:docname="Flag_of_Australia_(converted) updated.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata36">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     id="namedview34"
+     showgrid="false"
+     inkscape:zoom="0.86620581"
+     inkscape:cx="709.86863"
+     inkscape:cy="316.62581"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g22" />
+  <defs
+     id="defs8">
+    <clipPath
+       id="c">
+      <path
+         d="M0,0V1.5H7V3H6zM6,0H3V3.5H0V3z"
+         id="path2" />
+    </clipPath>
+    <path
+       id="Star7"
+       d="M0,-360 69.421398,-144.155019 281.459334,-224.456329 155.988466,-35.603349 350.974048,80.107536 125.093037,99.758368 156.198146,324.348792 0,160 -156.198146,324.348792 -125.093037,99.758368 -350.974048,80.107536 -155.988466,-35.603349 -281.459334,-224.456329 -69.421398,-144.155019z" />
+    <path
+       id="Star5"
+       d="M0,-210 54.859957,-75.508253 199.721868,-64.893569 88.765275,28.841586 123.434903,169.893569 0,93.333333 -123.434903,169.893569 -88.765275,28.841586 -199.721868,-64.893569 -54.859957,-75.508253z" />
+    <use
+       id="Cstar"
+       xlink:href="#Star7"
+       transform="scale(2.1)" />
+  </defs>
+  <g
+     transform="scale(840)"
+     id="g22">
+    <rect
+       width="12"
+       height="6"
+       id="rect10"
+       fill="#002776"
+       style="fill:#012169;fill-opacity:1" />
+    <path
+       d="M0,0 6,3M6,0 0,3"
+       stroke="#fff"
+       stroke-width="0.6"
+       id="path12" />
+    <path
+       d="M0,0 6,3M6,0 0,3"
+       clip-path="url(#c)"
+       id="path14"
+       style="stroke:#e4002b"
+       stroke-width="0.4"
+       stroke="#e00034" />
+    <path
+       d="M3,0V3.5M0,1.5H7"
+       stroke="#fff"
+       id="path16" />
+    <path
+       d="M3,0V3.5M0,1.5H7"
+       id="path18"
+       stroke-width="0.6"
+       stroke="#e00034"
+       style="stroke:#e4002b;stroke-opacity:1" />
+    <path
+       d="M0,3H6V0H8V4H0z"
+       id="path20"
+       fill="#002776"
+       style="fill:#012169;fill-opacity:1" />
+  </g>
+  <g
+     fill="#fff"
+     id="g30">
+    <use
+       id="Comwlth"
+       xlink:href="#Cstar"
+       x="2520"
+       y="3780" />
+    <use
+       id="αCrucis"
+       xlink:href="#Star7"
+       x="7560"
+       y="4200" />
+    <use
+       id="βCrucis"
+       xlink:href="#Star7"
+       x="6300"
+       y="2205" />
+    <use
+       id="γCrucis"
+       xlink:href="#Star7"
+       x="7560"
+       y="840" />
+    <use
+       id="δCrucis"
+       xlink:href="#Star7"
+       x="8680"
+       y="1869" />
+    <use
+       id="εCrucis"
+       xlink:href="#Star5"
+       x="8064"
+       y="2730" />
+  </g>
+</svg>
