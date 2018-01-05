@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tipue Search Static Mode Demo</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="tipuesearch/css/normalize.css">
+<link rel="stylesheet" href="../../inc/standard.css">
+
+<script type="text/javascript" src="tipuesearch/tipuesearch_set.js"></script>
+<script type="text/javascript" src="tipuesearch/tipuesearch_content.js"></script>
+<link rel="stylesheet" type="text/css" href="tipuesearch/css/tipuesearch.css">
+<script type="text/javascript" src="tipuesearch/tipuesearch.min.js"></script>
+
+</head><body>
+
+
+<!-- head -->
+
+
+<div id="head"><div class="head_img"><a href="http://www.tipue.com"><img src="../../img/head.png" style="width: 32px; height: 32px;" alt="Tipue"></a></div></div>
+
+
+<!-- body -->
+
+
+<div class="center" style="padding-top: 97px;"><a href="http://www.tipue.com/search"><img src="../../img/front_6.jpg" class="front_img" alt="Tipue Search"></a></div>
+<div class="center" style="padding-top: 21px;"><h2>Tipue Search Static Mode Demo</h2></div>
+
+<div class="block" style="padding-top: 31px;">
+
+<form action="search.html">
+<div class="tipue_search_left"><img src="tipuesearch/search.png" class="tipue_search_icon"></div>
+<div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required></div>
+<div style="clear: both;"></div>
+</form>
+<div id="tipue_search_content"></div>
+
+
+<div class="center mow" style="padding: 39px 0 30px 0;">&copy; 2017, Tipue. Made in London.</div>
+
+<script>
+$(document).ready(function() {
+     $('#tipue_search_input').tipuesearch();
+});
+</script>
+
+</body>
+</html>
