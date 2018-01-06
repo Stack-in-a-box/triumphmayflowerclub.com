@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Tipue Search Static Mode Demo</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="search.css">
         <script type="text/javascript" src="start.js"></script>
         <script type="text/javascript" src="index.js"></script>
-        <link rel="stylesheet" type="text/css" href="search.css">
         <script type="text/javascript" src="search.js"></script>
         <script type="text/javascript" src="common.js"></script>
         <script type="text/javascript" src="suggestions.js"></script>
@@ -16,19 +13,14 @@
         <script type="text/javascript" src="related.js"></script>
     </head>
     <body>
-        <div>
-            <form>
-                <div class="tipue_search_right">
-                    <input type="text" name="query" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required>
-                </div>
-                <div style="clear: both;"></div>
-            </form>
-            <div id="tipue_search_content"></div>
-            <script>
-                $(document).ready(function () {
-                    $("#tipue_search_input").tipuesearch();
-                });
-            </script>
-        </div>
+        <form>
+            <input type="text" name="query" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required>
+        </form>
+        <div id="tipue_search_content"></div>
+        <script>
+            $(document).ready(function () {
+                $("#tipue_search_input").tipuesearch();
+            });
+        </script>
     </body>
 </html>
