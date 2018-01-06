@@ -257,8 +257,8 @@
                         }
 
                         if (set.showTime) {
-                            var endTimer = new Date().getTime();
-                            var time = (endTimer - startTimer) / 1000;
+                            var endTime = new Date().getTime();
+                            var time = (endTime - startTime) / 1000;
 
                             out += " (search took " + time.toFixed(2) + " seconds).";
 
