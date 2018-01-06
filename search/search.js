@@ -391,8 +391,10 @@
                         if (c > set.show) {
                             var pages = Math.ceil(c / set.show);
                             var page = (start / set.show);
+                            var paginationOpeningTags = "<footer><div id=\"tipue_search_foot\"><ul id=\"tipue_search_foot_boxes\">";
+                            var paginationClosingTags = "</ul></div></footer>";
 
-                            out += "<nav><div id=\"tipue_search_foot\"><ul id=\"tipue_search_foot_boxes\">";
+                            out += paginationOpeningTags;
 
                             if (start > 0) {
                                 out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" accesskey=\"b\" id=\"" + (start - set.show) + "_" + replace + "\">Back</a></li>";
@@ -434,7 +436,7 @@
                                 out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" accesskey=\"m\" id=\"" + (start + set.show) + "_" + replace + "\">Next</a></li>";
                             }
 
-                            out += "</ul></div></nav>";
+                            out += paginationClosingTags;
                         }
                     } else {
                         out += "<div id=\"tipue_search_warning\">No results.</div>";

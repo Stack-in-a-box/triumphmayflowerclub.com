@@ -1,4 +1,4 @@
-header, nav, main article, main aside, footer {
+header, nav, main article, main aside, #footer {
     outline: 1px solid black;
 }
 
