@@ -1,17 +1,17 @@
 #tipue_search_input, #tipue_search_foot_boxes {
-    font: 300 14px/1 Roboto, sans-serif;
+    font: 300 14px/1 sans-serif;
 }
 
 #tipue_search_results_count, #tipue_search_warning, .tipue_search_content_url, .tipue_search_content_debug, .tipue_search_related_text {
-    font: 300 14px/1.7 Roboto, sans-serif;
+    font: 300 14px/1.7 sans-serif;
 }
 
 .tipue_search_content_title {
-    font: 100 26px/1.7 Roboto, sans-serif;
+    font: 100 26px/1.7 sans-serif;
 }
 
 .tipue_search_content_text, .tipue_search_related_title {
-    font: 300 15px/1.7 Roboto, sans-serif;
+    font: 300 15px/1.7 sans-serif;
 }
 
 .tipue_search_content_bold, .tipue_search_related_bold {
