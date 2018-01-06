@@ -1,5 +1,5 @@
 (function ($) {
-    $.fn.tipuesearch = function (options) {
+    $.fn.search = function (options) {
         var set = $.extend({
             contextBuffer: 60,
             contextLength: 60,
