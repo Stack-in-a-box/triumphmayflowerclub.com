@@ -84,8 +84,8 @@
                     for (var i = 0; i < d_w.length; i++) {
                         var a_w = true;
 
-                        for (var f = 0; f < tipuesearch_stop_words.length; f++) {
-                            if (d_w[i] == tipuesearch_stop_words[f]) {
+                        for (var f = 0; f < commonWords.length; f++) {
+                            if (d_w[i] == commonWords[f]) {
                                 a_w = false;
                                 show_stop = true;
                             }
