@@ -358,8 +358,8 @@
                         if (set.showRelated && standard) {
                             f = 0;
 
-                            for (var i = 0; i < tipuesearch_related.searches.length; i++) {
-                                if (d == tipuesearch_related.searches[i].search) {
+                            for (var i = 0; i < relatedSearches.length; i++) {
+                                if (d == relatedSearches[i].search) {
                                     if (show_replace) {
                                         d_o = d;
                                     }
@@ -368,16 +368,16 @@
                                         out += "<div class=\"tipue_search_related_title\">" + tipuesearch_string_15 + " <span class=\"tipue_search_related_bold\">" + d_o + "</span></div><div class=\"tipue_search_related_cols\">";
                                     }
 
-                                    out += "<div class=\"tipue_search_related_text\"><a class=\"tipue_search_related\" id=\"" + tipuesearch_related.searches[i].related + "\">";
+                                    out += "<div class=\"tipue_search_related_text\"><a class=\"tipue_search_related\" id=\"" + relatedSearches[i].related + "\">";
 
-                                    if (tipuesearch_related.searches[i].before) {
-                                        out += "<span class=\"tipue_search_related_before\">" + tipuesearch_related.searches[i].before + "</span> ";
+                                    if (relatedSearches[i].before) {
+                                        out += "<span class=\"tipue_search_related_before\">" + relatedSearches[i].before + "</span> ";
                                     }
 
-                                    out += tipuesearch_related.searches[i].related;
+                                    out += relatedSearches[i].related;
 
-                                    if (tipuesearch_related.searches[i].after) {
-                                        out += " <span class=\"tipue_search_related_after\">" + tipuesearch_related.searches[i].after + "</span>";
+                                    if (relatedSearches[i].after) {
+                                        out += " <span class=\"tipue_search_related_after\">" + relatedSearches[i].after + "</span>";
                                     }
 
                                     out += "</a></div>";

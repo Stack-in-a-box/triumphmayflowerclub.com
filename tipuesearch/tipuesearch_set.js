@@ -1,27 +1,3 @@
-var tipuesearch_related = {
-    searches: [
-        {
-            search: "tipue",
-            related: "Tipue Search"
-        },
-        {
-            search: "tipue",
-            before: "Tipue Search",
-            related: "Getting Started"
-        },
-        {
-            search: "tipue",
-            before: "Tipue",
-            related: "jQuery"
-        },
-        {
-            search: "tipue",
-            before: "Tipue",
-            related: "Blog"
-        }
-    ]
-};
-
 var tipuesearch_string_1 = "No title";
 var tipuesearch_string_2 = "Showing results for";
 var tipuesearch_string_3 = "Search instead for";
