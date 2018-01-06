@@ -24,9 +24,6 @@
             $.ajaxSetup({ async: false });
 
             var tipuesearch_t_c = 0;
-
-            $("#tipue_search_content").hide().html("<div class=\"tipue_search_spinner\"><div class=\"tipue_search_rect1\"></div><div class=\"tipue_search_rect2\"></div><div class=\"rect3\"></div></div>").show();
-
             var tipue_search_w = "";
 
             if (set.newWindow) {
@@ -456,7 +453,7 @@
                     }
                 }
 
-                $("#tipue_search_content").hide().html(out).slideDown(200);
+                $("#tipue_search_content").html(out);
 
                 $("#tipue_search_replaced").click(function () {
                     getTipueSearch(0, false);
