@@ -47,8 +47,8 @@
                 return searchString || null;
             }
 
-            if (getURLP("q")) {
-                $("#tipue_search_input").val(getURLP("q"));
+            if (getURLP("query")) {
+                $("#tipue_search_input").val(getURLP("query"));
                 getTipueSearch(0, true);
             }
 
