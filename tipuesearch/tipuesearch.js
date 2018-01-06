@@ -244,23 +244,23 @@
                         }
 
                         if (show_replace) {
-                            out += "<div id=\"tipue_search_warning\">" + tipuesearch_string_2 + " " + d + ". " + tipuesearch_string_3 + " <a id=\"tipue_search_replaced\">" + d_r + "</a></div>";
+                            out += "<div id=\"tipue_search_warning\">Showing results for <i>" + d + "</i>. Search instead for <i><a id=\"tipue_search_replaced\">" + d_r + "</a></i>?</div>";
                         }
 
                         if (c == 1) {
-                            out += "<div id=\"tipue_search_results_count\">" + tipuesearch_string_4;
+                            out += "<div id=\"tipue_search_results_count\">1 result";
                         }
 
                         else {
                             c_c = c.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                            out += "<div id=\"tipue_search_results_count\">" + c_c + " " + tipuesearch_string_5;
+                            out += "<div id=\"tipue_search_results_count\">" + c_c + " results";
                         }
 
                         if (set.showTime) {
                             var endTimer = new Date().getTime();
                             var time = (endTimer - startTimer) / 1000;
 
-                            out += " (" + time.toFixed(2) + " " + tipuesearch_string_14 + ")";
+                            out += " (search took " + time.toFixed(2) + " seconds).";
 
                             set.showTime = false;
                         }
@@ -365,7 +365,7 @@
                                     }
 
                                     if (!f) {
-                                        out += "<div class=\"tipue_search_related_title\">" + tipuesearch_string_15 + " <span class=\"tipue_search_related_bold\">" + d_o + "</span></div><div class=\"tipue_search_related_cols\">";
+                                        out += "<div class=\"tipue_search_related_title\">Searches related to <i><span class=\"tipue_search_related_bold\">" + d_o + "</span></i>.</div><div class=\"tipue_search_related_cols\">";
                                     }
 
                                     out += "<div class=\"tipue_search_related_text\"><a class=\"tipue_search_related\" id=\"" + relatedSearches[i].related + "\">";
@@ -398,7 +398,7 @@
                             out += "<nav><div id=\"tipue_search_foot\"><ul id=\"tipue_search_foot_boxes\">";
 
                             if (start > 0) {
-                                out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" accesskey=\"b\" id=\"" + (start - set.show) + "_" + replace + "\">" + tipuesearch_string_6 + "</a></li>";
+                                out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" accesskey=\"b\" id=\"" + (start - set.show) + "_" + replace + "\">Back</a></li>";
                             }
 
                             if (page <= 2) {
@@ -434,24 +434,24 @@
                             }
 
                             if (page + 1 != pages) {
-                                out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" accesskey=\"m\" id=\"" + (start + set.show) + "_" + replace + "\">" + tipuesearch_string_7 + "</a></li>";
+                                out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" accesskey=\"m\" id=\"" + (start + set.show) + "_" + replace + "\">Next</a></li>";
                             }
 
                             out += "</ul></div></nav>";
                         }
                     } else {
-                        out += "<div id=\"tipue_search_warning\">" + tipuesearch_string_8 + "</div>";
+                        out += "<div id=\"tipue_search_warning\">No results.</div>";
                     }
                 } else {
                     if (show_stop) {
-                        out += "<div id=\"tipue_search_warning\">" + tipuesearch_string_8 + ". " + tipuesearch_string_9 + "</div>";
+                        out += "<div id=\"tipue_search_warning\">No results. Common words are ignored.</div>";
                     } else {
-                        out += "<div id=\"tipue_search_warning\">" + tipuesearch_string_10 + "</div>";
+                        out += "<div id=\"tipue_search_warning\">Search term too short.</div>";
 
                         if (set.minimumLength == 1) {
-                            out += "<div id=\"tipue_search_warning\">" + tipuesearch_string_11 + "</div>";
+                            out += "<div id=\"tipue_search_warning\">Should be one character or more.</div>";
                         } else {
-                            out += "<div id=\"tipue_search_warning\">" + tipuesearch_string_12 + " " + set.minimumLength + " " + tipuesearch_string_13 + "</div>";
+                            out += "<div id=\"tipue_search_warning\">Should be " + set.minimumLength + " characters or more.</div>";
                         }
                     }
                 }
