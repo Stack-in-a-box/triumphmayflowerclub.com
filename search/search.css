@@ -1,4 +1,4 @@
-#tipue_search_input, #tipue_search_foot_boxes {
+#searchBox, #tipue_search_foot_boxes {
     font: 300 14px/1 sans-serif;
 }
 
@@ -18,7 +18,7 @@
     font-weight: 400;
 }
 
-#tipue_search_input {
+#searchBox {
     color: #333;
     max-width: 210px;
         padding: 17px;
@@ -31,7 +31,7 @@
         margin: 0;
 }
 
-#tipue_search_content {
+#searchResultsContainer {
     max-width: 750px;
         padding-top: 15px;
         margin: 0;

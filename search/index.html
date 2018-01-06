@@ -14,12 +14,12 @@
     </head>
     <body>
         <form>
-            <input type="text" name="query" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required>
+            <input type="text" name="query" id="searchBox" pattern=".{3,}" required>
         </form>
-        <div id="tipue_search_content"></div>
+        <div id="searchResultsContainer"></div>
         <script>
             $(document).ready(function () {
-                $("#tipue_search_input").tipuesearch();
+                $("#searchBox").tipuesearch();
             });
         </script>
     </body>

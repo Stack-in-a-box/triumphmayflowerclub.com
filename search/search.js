@@ -45,7 +45,7 @@
             }
 
             if (getURLP("query")) {
-                $("#tipue_search_input").val(getURLP("query"));
+                $("#searchBox").val(getURLP("query"));
                 getTipueSearch(0, true);
             }
 
@@ -64,7 +64,7 @@
 
                 found = [];
 
-                var d_o = $("#tipue_search_input").val();
+                var d_o = $("#searchBox").val();
                 var d = d_o.toLowerCase();
 
                 d = $.trim(d);
@@ -453,14 +453,14 @@
                     }
                 }
 
-                $("#tipue_search_content").html(out);
+                $("#searchResultsContainer").html(out);
 
                 $("#tipue_search_replaced").click(function () {
                     getTipueSearch(0, false);
                 });
 
                 $(".tipue_search_related").click(function () {
-                    $("#tipue_search_input").val($(this).attr("id"));
+                    $("#searchBox").val($(this).attr("id"));
                     getTipueSearch(0, true);
                 });
 
