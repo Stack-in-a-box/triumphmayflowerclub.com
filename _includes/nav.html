@@ -11,8 +11,8 @@
         <li><a class="sectionComplete" href="{{ site.baseurl }}/contact">Contact</a></li>
         <li><a class="sectionComplete" href="{{ site.baseurl }}/links">Links</a></li>
     </ul>
-    <div id="search">
-        <input type="search">
+    <form id="search" action="{{ site.baseurl }}/search">
+        <input id="searchBox" type="search" name="query" pattern=".{3,}" required>
         <button>Search</button>
-    </div>
+    </form>
 </nav>
