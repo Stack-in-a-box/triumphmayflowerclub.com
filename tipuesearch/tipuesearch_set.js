@@ -1,20 +1,3 @@
-var tipuesearch_weight = {
-    weight: [
-        {
-            url: "http://www.tipue.com",
-            score: 20
-        },
-        {
-            url: "http://www.tipue.com/search",
-            score: 30
-        },
-        {
-            url: "http://www.tipue.com/is",
-            score: 10
-        }
-    ]
-};
-
 var tipuesearch_stem = {
     words: [
         {

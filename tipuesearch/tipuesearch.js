@@ -132,7 +132,7 @@
                         d_w = d_t.split(" ");
 
                         for (var i = 0; i < pageIndex.length; i++) {
-                            var score = 0;
+                            var weight = 0;
                             var s_t = pageIndex[i].text;
 
                             for (var f = 0; f < d_w.length; f++) {
@@ -146,27 +146,27 @@
 
                                 if (pageIndex[i].title.search(pat) != -1) {
                                     var m_c = pageIndex[i].title.match(pat).length;
-                                    score += (20 * m_c);
+                                    weight += (20 * m_c);
                                 }
 
                                 if (pageIndex[i].text.search(pat) != -1) {
                                     var m_c = pageIndex[i].text.match(pat).length;
-                                    score += (20 * m_c);
+                                    weight += (20 * m_c);
                                 }
 
                                 if (pageIndex[i].tags.search(pat) != -1) {
                                     var m_c = pageIndex[i].tags.match(pat).length;
-                                    score += (10 * m_c);
+                                    weight += (10 * m_c);
                                 }
 
                                 if (pageIndex[i].url.search(pat) != -1) {
-                                    score += 20;
+                                    weight += 20;
                                 }
 
-                                if (score != 0) {
-                                    for (var e = 0; e < tipuesearch_weight.weight.length; e++) {
-                                        if (pageIndex[i].url == tipuesearch_weight.weight[e].url) {
-                                            score += tipuesearch_weight.weight[e].score;
+                                if (weight != 0) {
+                                    for (var e = 0; e < weightings.length; e++) {
+                                        if (pageIndex[i].url == weightings[e].url) {
+                                            weight += weightings[e].weight;
                                         }
                                     }
                                 }
@@ -174,14 +174,14 @@
                                 if (d_w[f].match("^-")) {
                                     pat = new RegExp(d_w[f].substring(1), "i");
                                     if (pageIndex[i].title.search(pat) != -1 || pageIndex[i].text.search(pat) != -1 || pageIndex[i].tags.search(pat) != -1) {
-                                        score = 0;
+                                        weight = 0;
                                     }
                                 }
                             }
 
-                            if (score != 0) {
+                            if (weight != 0) {
                                 found.push({
-                                    score: score,
+                                    weight: weight,
                                     title: pageIndex[i].title,
                                     desc: s_t,
                                     url: pageIndex[i].url
@@ -192,41 +192,41 @@
                         }
                     } else {
                         for (var i = 0; i < pageIndex.length; i++) {
-                            var score = 0;
+                            var weight = 0;
                             var s_t = pageIndex[i].text;
                             var pat = new RegExp(d, "gi");
 
                             if (pageIndex[i].title.search(pat) != -1) {
                                 var m_c = pageIndex[i].title.match(pat).length;
-                                score += (20 * m_c);
+                                weight += (20 * m_c);
                             }
 
                             if (pageIndex[i].text.search(pat) != -1) {
                                 var m_c = pageIndex[i].text.match(pat).length;
-                                score += (20 * m_c);
+                                weight += (20 * m_c);
                             }
 
                             if (pageIndex[i].tags.search(pat) != -1) {
                                 var m_c = pageIndex[i].tags.match(pat).length;
-                                score += (10 * m_c);
+                                weight += (10 * m_c);
                             }
 
                             if (pageIndex[i].url.search(pat) != -1) {
-                                score += 20;
+                                weight += 20;
                             }
 
-                            if (score != 0) {
-                                for (var e = 0; e < tipuesearch_weight.weight.length; e++) {
-                                    if (pageIndex[i].url == tipuesearch_weight.weight[e].url) {
-                                        score += tipuesearch_weight.weight[e].score;
+                            if (weight != 0) {
+                                for (var e = 0; e < weightings.length; e++) {
+                                    if (pageIndex[i].url == weightings[e].url) {
+                                        weight += weightings[e].weight;
                                     }
                                 }
                             }
 
-                            if (score != 0) {
+                            if (weight != 0) {
                                 found.push(
                                     {
-                                        score: score,
+                                        weight: weight,
                                         title: pageIndex[i].title,
                                         desc: s_t,
                                         url: pageIndex[i].url
@@ -267,7 +267,7 @@
 
                         out += "</div>";
 
-                        found.sort(function (a, b) { return b.score - a.score });
+                        found.sort(function (a, b) { return b.weight - a.weight });
 
                         var l_o = 0;
 
@@ -276,7 +276,7 @@
                                 out += "<div class=\"tipue_search_content_title\"><a href=\"" + found[i].url + "\"" + tipue_search_w + ">" + found[i].title + "</a></div>";
 
                                 if (set.debug) {
-                                    out += "<div class=\"tipue_search_content_debug\">Score: " + found[i].score + "</div>";
+                                    out += "<div class=\"tipue_search_content_debug\">Score: " + found[i].weight + "</div>";
                                 }
 
                                 if (set.showURL) {
