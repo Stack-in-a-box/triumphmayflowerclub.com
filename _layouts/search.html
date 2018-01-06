@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        {% include head.html %}
+        <link href="{{ site.baseurl }}/search/search.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/search/common.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/search/index.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/search/related.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/search/search.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/search/start.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/search/suggestions.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/search/synonyms.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/search/weightings.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            {% include header.html %}
+            {% include nav.html %}
+            {{ content }}
+            {% include footer.html %}
+        </div>
+    </body>
+</html>

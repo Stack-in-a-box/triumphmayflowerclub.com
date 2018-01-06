@@ -1,9 +1,7 @@
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}Andy Davies{% endif %}">
-    <meta name="description" content="The Triumph Mayflower Club exists to keep these wonderful and unique vehicles on the road and to provide a small part of the motoring heritage for the future.">
-    <title>{% if page.title %}{{ page.title }} · {% endif %}Triumph Mayflower Club</title>
-    {% include favicon.html %}
-    {% include css.html %}
-    {{ page.links }}    
-</head>
+<meta charset="utf-8">
+<meta name="author" content="{% if page.author %}{{ page.author }}{% else %}Andy Davies{% endif %}">
+<meta name="description" content="The Triumph Mayflower Club exists to keep these wonderful and unique vehicles on the road and to provide a small part of the motoring heritage for the future.">
+<title>{% if page.title %}{{ page.title }} · {% endif %}Triumph Mayflower Club</title>
+{% include favicon.html %}
+{% include css.html %}
+{{ page.links }}

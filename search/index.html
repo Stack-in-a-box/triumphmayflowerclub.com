@@ -1,21 +1,23 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="search.css">
-        <script type="text/javascript" src="start.js"></script>
-        <script type="text/javascript" src="index.js"></script>
-        <script type="text/javascript" src="search.js"></script>
-        <script type="text/javascript" src="common.js"></script>
-        <script type="text/javascript" src="suggestions.js"></script>
-        <script type="text/javascript" src="weightings.js"></script>
-        <script type="text/javascript" src="synonyms.js"></script>
-        <script type="text/javascript" src="related.js"></script>
-    </head>
-    <body>
-        <form>
-            <input type="text" name="query" id="searchBox" pattern=".{3,}" required>
-        </form>
-        <div id="searchResultsContainer"></div>
-    </body>
-</html>
+---
+layout: search
+title: Search Results
+---
+
+<main>
+    <article>
+        <ol id="breadcrumb">
+            <li>
+                <a href="{{ site.baseurl }}/">Home</a>
+            </li>
+            <li>Search Results</li>
+        </ol>
+        <div id="content">
+            <h1 class="sectionInProgress">Search Results</h1>
+            <div id="searchResultsContainer"></div>
+        </div>
+    </article>
+    <aside>
+        <h2>Sidebar</h2>
+        <p>Sidebar content...</p>
+    </aside>
+</main>
