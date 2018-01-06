@@ -20,17 +20,17 @@
 
 #searchResultsContainer {
     max-width: 750px;
-        padding-top: 15px;
-        margin: 0;
+    padding-top: 15px;
+    margin: 0;
 }
 
 #tipue_search_results_count {
-        color: #333;
+    color: #333;
 }
 
 #tipue_search_warning {
     color: #333;
-        margin: 7px 0;
+    margin: 7px 0;
 }
 
 #tipue_search_warning a {
@@ -44,7 +44,7 @@
 
 .tipue_search_content_title {
     color: #666;
-        margin-top: 21px;
+    margin-top: 21px;
 }
 
 .tipue_search_content_title a {
@@ -71,7 +71,7 @@
 }
 
 .tipue_search_content_text {
-        color: #333;
+    color: #333;
     word-wrap: break-word;
     hyphens: auto;
     margin-top: 5px;
@@ -82,12 +82,12 @@
 }
 
 .tipue_search_content_debug {
-        color: #333;
+    color: #333;
     margin: 5px 0;
 }
 
 .tipue_search_related_title {
-        color: #333;
+    color: #333;
     margin: 26px 0 7px 0;
 }
 
@@ -102,37 +102,37 @@
 }
 
 #tipue_search_foot_boxes {
-        padding: 0;
-        margin: 0;
-        cursor: pointer;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
 }
 
 #tipue_search_foot_boxes li {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
 }
 
 #tipue_search_foot_boxes li a {
-        padding: 10px 17px 11px 17px;
+    padding: 10px 17px 11px 17px;
     background-color: #fff;
     border: 1px solid #e3e3e3;
     border-radius: 1px;
-        color: #333;
-        margin-right: 7px;
-        text-decoration: none;
-        text-align: center;
+    color: #333;
+    margin-right: 7px;
+    text-decoration: none;
+    text-align: center;
 }
 
 #tipue_search_foot_boxes li.current {
-        padding: 10px 17px 11px 17px;
+    padding: 10px 17px 11px 17px;
     background: #f6f6f6;
     border: 1px solid #e3e3e3;
     border-radius: 1px;
-        color: #333;
-        margin-right: 7px;
-        text-align: center;
+    color: #333;
+    margin-right: 7px;
+    text-align: center;
 }
 
 #tipue_search_foot_boxes li a:hover {
