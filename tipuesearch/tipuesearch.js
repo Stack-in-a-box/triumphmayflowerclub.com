@@ -108,9 +108,9 @@
                             var d_r = d;
 
                             for (var i = 0; i < d_w.length; i++) {
-                                for (var f = 0; f < tipuesearch_replace.words.length; f++) {
-                                    if (d_w[i] == tipuesearch_replace.words[f].word) {
-                                        d = d.replace(d_w[i], tipuesearch_replace.words[f].replace_with);
+                                for (var f = 0; f < correctionSuggestions.length; f++) {
+                                    if (d_w[i] == correctionSuggestions[f].word) {
+                                        d = d.replace(d_w[i], correctionSuggestions[f].suggestion);
                                         show_replace = true;
                                     }
                                 }

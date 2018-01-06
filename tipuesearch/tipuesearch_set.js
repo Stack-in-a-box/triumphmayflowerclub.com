@@ -1,20 +1,3 @@
-var tipuesearch_replace = {
-    words: [
-        {
-            word: "tip",
-            replace_with: "tipue"
-        },
-        {
-            word: "javscript",
-            replace_with: "javascript"
-        },
-        {
-            word: "jqeury",
-            replace_with: "jquery"
-        }
-    ]
-};
-
 var tipuesearch_weight = {
     weight: [
         {
