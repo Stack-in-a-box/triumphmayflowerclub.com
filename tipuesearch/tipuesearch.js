@@ -122,9 +122,9 @@
                         var d_t = d;
 
                         for (var i = 0; i < d_w.length; i++) {
-                            for (var f = 0; f < tipuesearch_stem.words.length; f++) {
-                                if (d_w[i] == tipuesearch_stem.words[f].word) {
-                                    d_t = d_t + " " + tipuesearch_stem.words[f].stem;
+                            for (var f = 0; f < synonyms.length; f++) {
+                                if (d_w[i] == synonyms[f].word) {
+                                    d_t = d_t + " " + synonyms[f].synonym;
                                 }
                             }
                         }

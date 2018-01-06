@@ -1,20 +1,3 @@
-var tipuesearch_stem = {
-    words: [
-        {
-            word: "e-mail",
-            stem: "email"
-        },
-        {
-            word: "javascript",
-            stem: "jquery"
-        },
-        {
-            word: "javascript",
-            stem: "js"
-        }
-    ]
-};
-
 var tipuesearch_related = {
     searches: [
         {
