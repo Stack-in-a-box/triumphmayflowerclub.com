@@ -2,7 +2,7 @@
     font: 300 14px/1 sans-serif;
 }
 
-#tipue_search_results_count, #tipue_search_warning, .tipue_search_content_url, .tipue_search_content_debug {
+#tipue_search_results_count, .tipue_search_content_url, .tipue_search_content_debug {
     font: 300 14px/1.7 sans-serif;
 }
 
@@ -16,20 +16,6 @@
 
 #tipue_search_results_count {
     color: #333;
-}
-
-#tipue_search_warning {
-    color: #333;
-    margin: 7px 0;
-}
-
-#tipue_search_warning a {
-    color: #5396ea;
-    text-decoration: none;
-}
-
-#tipue_search_warning a:hover {
-    color: #555;
 }
 
 .tipue_search_content_title {

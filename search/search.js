@@ -56,27 +56,27 @@ const baseUrl = window.location.origin;
                 }
             });
 
-            function getTipueSearch(start, replace) {
+            function getTipueSearch(start, shouldReplace) {
                 const searchBoxValue = $("#searchBox").val();
 
                 var out = "";
-                var show_replace = false;
+                var showUndoReplacementOption = false;
                 var show_stop = false;
                 var standard = true;
                 var c = 0;
 
                 found = [];
 
-                var d = searchBoxValue.toLowerCase().trim();
+                var searchTerm = searchBoxValue.toLowerCase().trim();
 
-                if ((d.match("^\"") && d.match("\"$")) || (d.match("^'") && d.match("'$"))) {
+                if ((searchTerm.match("^\"") && searchTerm.match("\"$")) || (searchTerm.match("^'") && searchTerm.match("'$"))) {
                     standard = false;
                 }
 
-                var d_w = d.split(" ");
+                var d_w = searchTerm.split(" ");
 
                 if (standard) {
-                    d = "";
+                    searchTerm = "";
 
                     for (var i = 0; i < d_w.length; i++) {
                         var a_w = true;
@@ -89,34 +89,34 @@ const baseUrl = window.location.origin;
                         }
 
                         if (a_w) {
-                            d = d + " " + d_w[i];
+                            searchTerm = searchTerm + " " + d_w[i];
                         }
                     }
 
-                    d = $.trim(d);
-                    d_w = d.split(" ");
+                    searchTerm = $.trim(searchTerm);
+                    d_w = searchTerm.split(" ");
                 } else {
-                    d = d.substring(1, d.length - 1);
+                    searchTerm = searchTerm.substring(1, searchTerm.length - 1);
                 }
 
-                if (d.length >= set.minimumLength) {
+                if (searchTerm.length >= set.minimumLength) {
                     if (standard) {
-                        if (replace) {
-                            var d_r = d;
+                        if (shouldReplace) {
+                            var replacedSearchTerm = searchTerm;
 
                             for (var i = 0; i < d_w.length; i++) {
                                 for (var f = 0; f < correctionSuggestions.length; f++) {
                                     if (d_w[i] == correctionSuggestions[f].word) {
-                                        d = d.replace(d_w[i], correctionSuggestions[f].suggestion);
-                                        show_replace = true;
+                                        searchTerm = searchTerm.replace(d_w[i], correctionSuggestions[f].suggestion);
+                                        showUndoReplacementOption = true;
                                     }
                                 }
                             }
 
-                            d_w = d.split(" ");
+                            d_w = searchTerm.split(" ");
                         }
 
-                        var d_t = d;
+                        var d_t = searchTerm;
 
                         for (var i = 0; i < d_w.length; i++) {
                             for (var f = 0; f < synonyms.length; f++) {
@@ -191,7 +191,7 @@ const baseUrl = window.location.origin;
                         for (var i = 0; i < pageIndex.length; i++) {
                             var weight = 0;
                             var s_t = pageIndex[i].text;
-                            var pat = new RegExp(d, "gi");
+                            var pat = new RegExp(searchTerm, "gi");
 
                             if (pageIndex[i].title.search(pat) != -1) {
                                 var m_c = pageIndex[i].title.match(pat).length;
@@ -240,9 +240,7 @@ const baseUrl = window.location.origin;
                             tipuesearch_t_c++;
                         }
 
-                        if (show_replace) {
-                            out += "<div id=\"tipue_search_warning\">Showing results for <i>" + d + "</i>. Search instead for <i><a id=\"tipue_search_replaced\">" + d_r + "</a></i>?</div>";
-                        }
+                        out += getSearchStatusLineHtml(searchTerm, replacedSearchTerm, showUndoReplacementOption);
 
                         if (c == 1) {
                             out += "<div id=\"tipue_search_results_count\">1 result";
@@ -290,7 +288,7 @@ const baseUrl = window.location.origin;
                                     var t = found[i].desc;
 
                                     if (set.showContext) {
-                                        d_w = d.split(" ");
+                                        d_w = searchTerm.split(" ");
 
                                         var s_1 = found[i].desc.toLowerCase().indexOf(d_w[0]);
 
@@ -308,7 +306,7 @@ const baseUrl = window.location.origin;
                                     }
 
                                     if (standard) {
-                                        d_w = d.split(" ");
+                                        d_w = searchTerm.split(" ");
 
                                         for (var f = 0; f < d_w.length; f++) {
                                             if (set.highlightTerms) {
@@ -319,7 +317,7 @@ const baseUrl = window.location.origin;
                                     }
 
                                     else if (set.highlightTerms) {
-                                        var patr = new RegExp("(" + d + ")", "gi");
+                                        var patr = new RegExp("(" + searchTerm + ")", "gi");
                                         t = t.replace(patr, "<b>$1</b>");
                                     }
 
@@ -361,7 +359,7 @@ const baseUrl = window.location.origin;
                             out += paginationOpeningTags;
 
                             if (start > 0) {
-                                out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" accesskey=\"b\" id=\"" + (start - set.show) + "_" + replace + "\">Back</a></li>";
+                                out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" accesskey=\"b\" id=\"" + (start - set.show) + "_" + shouldReplace + "\">Back</a></li>";
                             }
 
                             if (page <= 2) {
@@ -377,7 +375,7 @@ const baseUrl = window.location.origin;
                                     }
 
                                     else {
-                                        out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" id=\"" + (f * set.show) + "_" + replace + "\">" + (f + 1) + "</a></li>";
+                                        out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" id=\"" + (f * set.show) + "_" + shouldReplace + "\">" + (f + 1) + "</a></li>";
                                     }
                                 }
                             } else {
@@ -391,38 +389,38 @@ const baseUrl = window.location.origin;
                                     if (f == page) {
                                         out += "<li class=\"current\" role=\"navigation\">" + (f + 1) + "</li>";
                                     } else {
-                                        out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" id=\"" + (f * set.show) + "_" + replace + "\">" + (f + 1) + "</a></li>";
+                                        out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" id=\"" + (f * set.show) + "_" + shouldReplace + "\">" + (f + 1) + "</a></li>";
                                     }
                                 }
                             }
 
                             if (page + 1 != pages) {
-                                out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" accesskey=\"m\" id=\"" + (start + set.show) + "_" + replace + "\">Next</a></li>";
+                                out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" accesskey=\"m\" id=\"" + (start + set.show) + "_" + shouldReplace + "\">Next</a></li>";
                             }
 
                             out += paginationClosingTags;
                         }
                     } else {
-                        out += "<div id=\"tipue_search_warning\">No results.</div>";
+                        out += "<p>No results.</p>";
                     }
                 } else {
                     if (show_stop) {
-                        out += "<div id=\"tipue_search_warning\">No results. Common words are ignored.</div>";
+                        out += "<p>No results. Common words are ignored.</p>";
                     } else {
-                        out += "<div id=\"tipue_search_warning\">Search term too short.</div>";
+                        out += "<p>Search term too short.</p>";
 
                         if (set.minimumLength == 1) {
-                            out += "<div id=\"tipue_search_warning\">Should be one character or more.</div>";
+                            out += "<p>Should be one character or more.</p>";
                         } else {
-                            out += "<div id=\"tipue_search_warning\">Should be " + set.minimumLength + " characters or more.</div>";
+                            out += "<p>Should be " + set.minimumLength + " characters or more.</p>";
                         }
                     }
                 }
 
                 $("#searchResultsContainer").html(out);
-                $("#relatedSearchesContainer").html(getRelatedSearchesHtml(d));
+                $("#relatedSearchesContainer").html(getRelatedSearchesHtml(searchTerm));
 
-                $("#tipue_search_replaced").click(function () {
+                $("#undoReplacementLink").click(function () {
                     getTipueSearch(0, false);
                 });
 
@@ -436,6 +434,13 @@ const baseUrl = window.location.origin;
         });
     };
 })(jQuery);
+
+function getSearchStatusLineHtml(searchTermBeingShown, replacedSearchTerm, showUndoReplacementOption) {
+    const showingResultsFor = `Showing results for <i>${searchTermBeingShown}</i>.`;
+    const undoReplacementOption = showUndoReplacementOption ? ` Search instead for <i><a href="#" id="undoReplacementLink">${replacedSearchTerm}</a></i>?` : "";
+
+    return `<p>${showingResultsFor}${undoReplacementOption}</p>`;
+}
 
 function getRelatedSearchesHtml(searchTerm) {
     let relatedSearches = relatedSearchesIndex.filter(r => searchTerm === r.search);
