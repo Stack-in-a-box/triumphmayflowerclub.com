@@ -300,7 +300,7 @@ const baseUrl = window.location.origin;
                                             t_1 = $.trim(t_1);
 
                                             if (t_1.length > set.contextLength) {
-                                                t = "... " + t_1;
+                                                t = "… " + t_1;
                                             }
                                         }
                                     }
@@ -337,7 +337,7 @@ const baseUrl = window.location.origin;
                                     t_d = $.trim(t_d);
 
                                     if (t_d.charAt(t_d.length - 1) != ".") {
-                                        t_d += " ...";
+                                        t_d += " …";
                                     }
 
                                     t_d = t_d.replace(/h0011/g, "b");
