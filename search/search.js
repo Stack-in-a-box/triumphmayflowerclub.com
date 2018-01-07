@@ -320,7 +320,7 @@ const baseUrl = window.location.origin;
 
                                     else if (set.highlightTerms) {
                                         var patr = new RegExp("(" + d + ")", "gi");
-                                        t = t.replace(patr, "<span class=\"tipue_search_content_bold\">$1</span>");
+                                        t = t.replace(patr, "<b>$1</b>");
                                     }
 
                                     var t_d = "";
@@ -342,8 +342,8 @@ const baseUrl = window.location.origin;
                                         t_d += " ...";
                                     }
 
-                                    t_d = t_d.replace(/h0011/g, "span class=\"tipue_search_content_bold\"");
-                                    t_d = t_d.replace(/h0012/g, "/span");
+                                    t_d = t_d.replace(/h0011/g, "b");
+                                    t_d = t_d.replace(/h0012/g, "/b");
 
                                     out += "<div class=\"tipue_search_content_text\">" + t_d + "</div>";
                                 }

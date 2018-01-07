@@ -14,10 +14,6 @@
     font: 300 15px/1.7 sans-serif;
 }
 
-.tipue_search_content_bold {
-    font-weight: 400;
-}
-
 #searchResultsContainer {
     max-width: 750px;
     padding-top: 15px;
@@ -75,10 +71,6 @@
     word-wrap: break-word;
     hyphens: auto;
     margin-top: 5px;
-}
-
-.tipue_search_content_bold {
-    color: #333;
 }
 
 .tipue_search_content_debug {
