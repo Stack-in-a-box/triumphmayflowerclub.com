@@ -47,20 +47,19 @@ const baseUrl = window.location.origin;
 
             if (getURLP("query")) {
                 $("#searchBox").val(getURLP("query"));
-                getTipueSearch(0, true);
+                getTipueSearch(0);
             }
 
             $(this).keyup(function (event) {
                 if (event.keyCode == "13") {
-                    getTipueSearch(0, true);
+                    getTipueSearch(0);
                 }
             });
 
-            function getTipueSearch(start, shouldReplace) {
+            function getTipueSearch(start) {
                 const searchBoxValue = $("#searchBox").val();
 
                 var out = "";
-                var showUndoReplacementOption = false;
                 var show_stop = false;
                 var standard = true;
                 var c = 0;
@@ -73,72 +72,69 @@ const baseUrl = window.location.origin;
                     standard = false;
                 }
 
-                var d_w = searchTerm.split(" ");
+                var searchTermWords = searchTerm.split(" ");
 
                 if (standard) {
                     searchTerm = "";
 
-                    for (var i = 0; i < d_w.length; i++) {
+                    for (var i = 0; i < searchTermWords.length; i++) {
                         var a_w = true;
 
                         for (var f = 0; f < commonWords.length; f++) {
-                            if (d_w[i] == commonWords[f]) {
+                            if (searchTermWords[i] == commonWords[f]) {
                                 a_w = false;
                                 show_stop = true;
                             }
                         }
 
                         if (a_w) {
-                            searchTerm = searchTerm + " " + d_w[i];
+                            searchTerm = searchTerm + " " + searchTermWords[i];
                         }
                     }
 
                     searchTerm = $.trim(searchTerm);
-                    d_w = searchTerm.split(" ");
+                    searchTermWords = searchTerm.split(" ");
                 } else {
                     searchTerm = searchTerm.substring(1, searchTerm.length - 1);
                 }
 
                 if (searchTerm.length >= set.minimumLength) {
                     if (standard) {
-                        if (shouldReplace) {
-                            var replacedSearchTerm = searchTerm;
+                        var suggestedCorrection = null;
 
-                            for (var i = 0; i < d_w.length; i++) {
-                                for (var f = 0; f < correctionSuggestions.length; f++) {
-                                    if (d_w[i] == correctionSuggestions[f].word) {
-                                        searchTerm = searchTerm.replace(d_w[i], correctionSuggestions[f].suggestion);
-                                        showUndoReplacementOption = true;
-                                    }
+                        for (let i = 0; i < searchTermWords.length; i++) {
+                            for (let j = 0; j < correctionSuggestions.length; j++) {
+                                if (searchTermWords[i] === correctionSuggestions[j].word) {
+                                    suggestedCorrection = searchTerm.replace(searchTermWords[i], correctionSuggestions[j].suggestion);
                                 }
                             }
-
-                            d_w = searchTerm.split(" ");
                         }
+
+                        searchTermWords = searchTerm.split(" ");
 
                         var d_t = searchTerm;
 
-                        for (var i = 0; i < d_w.length; i++) {
+                        for (var i = 0; i < searchTermWords.length; i++) {
                             for (var f = 0; f < synonyms.length; f++) {
-                                if (d_w[i] == synonyms[f].word) {
+                                if (searchTermWords[i] == synonyms[f].word) {
                                     d_t = d_t + " " + synonyms[f].synonym;
                                 }
                             }
                         }
 
-                        d_w = d_t.split(" ");
+                        searchTermWords = d_t.split(" ");
 
                         for (var i = 0; i < pageIndex.length; i++) {
                             var weight = 0;
                             var s_t = pageIndex[i].text;
 
-                            for (var f = 0; f < d_w.length; f++) {
+                            for (var f = 0; f < searchTermWords.length; f++) {
                                 if (set.wholeWords) {
-                                    var pat = new RegExp("\\b" + d_w[f] + "\\b", "gi");
+                                    var pat = new RegExp("\\b" + searchTermWords[f] + "\\b", "gi");
                                 }
 
                                 else {
-                                    var pat = new RegExp(d_w[f], "gi");
+                                    var pat = new RegExp(searchTermWords[f], "gi");
                                 }
 
                                 if (pageIndex[i].title.search(pat) != -1) {
@@ -168,8 +164,8 @@ const baseUrl = window.location.origin;
                                     }
                                 }
 
-                                if (d_w[f].match("^-")) {
-                                    pat = new RegExp(d_w[f].substring(1), "i");
+                                if (searchTermWords[f].match("^-")) {
+                                    pat = new RegExp(searchTermWords[f].substring(1), "i");
                                     if (pageIndex[i].title.search(pat) != -1 || pageIndex[i].text.search(pat) != -1 || pageIndex[i].tags.search(pat) != -1) {
                                         weight = 0;
                                     }
@@ -233,14 +229,14 @@ const baseUrl = window.location.origin;
                         }
                     }
 
+                    out += getSearchStatusLineHtml(searchTerm, suggestedCorrection);
+
                     if (c != 0) {
                         if (set.showTitleCount && tipuesearch_t_c == 0) {
                             var title = document.title;
                             document.title = "(" + c + ") " + title;
                             tipuesearch_t_c++;
                         }
-
-                        out += getSearchStatusLineHtml(searchTerm, replacedSearchTerm, showUndoReplacementOption);
 
                         if (c == 1) {
                             out += "<div id=\"tipue_search_results_count\">1 result";
@@ -288,9 +284,9 @@ const baseUrl = window.location.origin;
                                     var t = found[i].desc;
 
                                     if (set.showContext) {
-                                        d_w = searchTerm.split(" ");
+                                        searchTermWords = searchTerm.split(" ");
 
-                                        var s_1 = found[i].desc.toLowerCase().indexOf(d_w[0]);
+                                        var s_1 = found[i].desc.toLowerCase().indexOf(searchTermWords[0]);
 
                                         if (s_1 > set.contextStart) {
                                             var t_1 = t.substr(s_1 - set.contextBuffer);
@@ -306,11 +302,11 @@ const baseUrl = window.location.origin;
                                     }
 
                                     if (standard) {
-                                        d_w = searchTerm.split(" ");
+                                        searchTermWords = searchTerm.split(" ");
 
-                                        for (var f = 0; f < d_w.length; f++) {
+                                        for (var f = 0; f < searchTermWords.length; f++) {
                                             if (set.highlightTerms) {
-                                                var patr = new RegExp("(" + d_w[f] + ")", "gi");
+                                                var patr = new RegExp("(" + searchTermWords[f] + ")", "gi");
                                                 t = t.replace(patr, "<h0011>$1<h0012>");
                                             }
                                         }
@@ -359,7 +355,7 @@ const baseUrl = window.location.origin;
                             out += paginationOpeningTags;
 
                             if (start > 0) {
-                                out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" accesskey=\"b\" id=\"" + (start - set.show) + "_" + shouldReplace + "\">Back</a></li>";
+                                out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" accesskey=\"b\" id=\"" + (start - set.show) + "_" + "" + "\">Back</a></li>";
                             }
 
                             if (page <= 2) {
@@ -375,7 +371,7 @@ const baseUrl = window.location.origin;
                                     }
 
                                     else {
-                                        out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" id=\"" + (f * set.show) + "_" + shouldReplace + "\">" + (f + 1) + "</a></li>";
+                                        out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" id=\"" + (f * set.show) + "_" + "" + "\">" + (f + 1) + "</a></li>";
                                     }
                                 }
                             } else {
@@ -389,25 +385,25 @@ const baseUrl = window.location.origin;
                                     if (f == page) {
                                         out += "<li class=\"current\" role=\"navigation\">" + (f + 1) + "</li>";
                                     } else {
-                                        out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" id=\"" + (f * set.show) + "_" + shouldReplace + "\">" + (f + 1) + "</a></li>";
+                                        out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" id=\"" + (f * set.show) + "_" + "" + "\">" + (f + 1) + "</a></li>";
                                     }
                                 }
                             }
 
                             if (page + 1 != pages) {
-                                out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" accesskey=\"m\" id=\"" + (start + set.show) + "_" + shouldReplace + "\">Next</a></li>";
+                                out += "<li role=\"navigation\"><a class=\"tipue_search_foot_box\" accesskey=\"m\" id=\"" + (start + set.show) + "_" + "" + "\">Next</a></li>";
                             }
 
                             out += paginationClosingTags;
                         }
                     } else {
-                        out += "<p>No results.</p>";
+                        out += "<p><i>No results.</i></p>";
                     }
                 } else {
                     if (show_stop) {
-                        out += "<p>No results. Common words are ignored.</p>";
+                        out += "<p><i>No results – common words are ignored.</i></p>";
                     } else {
-                        out += "<p>Search term too short.</p>";
+                        out += "<p><i>Search term too short.</i></p>";
 
                         if (set.minimumLength == 1) {
                             out += "<p>Should be one character or more.</p>";
@@ -420,26 +416,23 @@ const baseUrl = window.location.origin;
                 $("#searchResultsContainer").html(out);
                 $("#relatedSearchesContainer").html(getRelatedSearchesHtml(searchTerm));
 
-                $("#undoReplacementLink").click(function () {
-                    getTipueSearch(0, false);
-                });
-
                 $(".tipue_search_foot_box").click(function () {
                     var id_v = $(this).attr("id");
                     var id_a = id_v.split("_");
 
-                    getTipueSearch(parseInt(id_a[0]), id_a[1]);
+                    getTipueSearch(parseInt(id_a[0]));
                 });
             }
         });
     };
 })(jQuery);
 
-function getSearchStatusLineHtml(searchTermBeingShown, replacedSearchTerm, showUndoReplacementOption) {
-    const showingResultsFor = `Showing results for <i>${searchTermBeingShown}</i>.`;
-    const undoReplacementOption = showUndoReplacementOption ? ` Search instead for <i><a href="#" id="undoReplacementLink">${replacedSearchTerm}</a></i>?` : "";
+function getSearchStatusLineHtml(searchTerm, suggestedCorrection) {
+    const showingResultsFor = `Showing results for <i>${searchTerm}</i>.`;
+    const correctedSearchUri = suggestedCorrection && baseUrl + "/search" + searchTermToQueryString(suggestedCorrection);
+    const didYouMean = suggestedCorrection ? ` Did you mean <i><a href="${correctedSearchUri}">${suggestedCorrection}</a></i>?` : "";
 
-    return `<p>${showingResultsFor}${undoReplacementOption}</p>`;
+    return `<p>${showingResultsFor}${didYouMean}</p>`;
 }
 
 function getRelatedSearchesHtml(searchTerm) {
