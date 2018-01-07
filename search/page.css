@@ -14,12 +14,6 @@
     font: 300 15px/1.7 sans-serif;
 }
 
-#searchResultsContainer {
-    max-width: 750px;
-    padding-top: 15px;
-    margin: 0;
-}
-
 #tipue_search_results_count {
     color: #333;
 }
