@@ -1,3 +1,5 @@
+const baseUrl = window.location.origin;
+
 (function ($) {
     $.fn.search = function (options) {
         var set = $.extend({
@@ -13,7 +15,6 @@
             newWindow: false,
             show: 9,
             showContext: true,
-            showRelated: true,
             showTime: true,
             showTitleCount: true,
             showURL: true,
@@ -56,6 +57,8 @@
             });
 
             function getTipueSearch(start, replace) {
+                const searchBoxValue = $("#searchBox").val();
+
                 var out = "";
                 var show_replace = false;
                 var show_stop = false;
@@ -64,10 +67,7 @@
 
                 found = [];
 
-                var d_o = $("#searchBox").val();
-                var d = d_o.toLowerCase();
-
-                d = $.trim(d);
+                var d = searchBoxValue.toLowerCase().trim();
 
                 if ((d.match("^\"") && d.match("\"$")) || (d.match("^'") && d.match("'$"))) {
                     standard = false;
@@ -352,42 +352,6 @@
                             l_o++;
                         }
 
-                        if (set.showRelated && standard) {
-                            f = 0;
-
-                            for (var i = 0; i < relatedSearches.length; i++) {
-                                if (d == relatedSearches[i].search) {
-                                    if (show_replace) {
-                                        d_o = d;
-                                    }
-
-                                    if (!f) {
-                                        out += "<div class=\"tipue_search_related_title\">Searches related to <i><span class=\"tipue_search_related_bold\">" + d_o + "</span></i>.</div><div class=\"tipue_search_related_cols\">";
-                                    }
-
-                                    out += "<div class=\"tipue_search_related_text\"><a class=\"tipue_search_related\" id=\"" + relatedSearches[i].related + "\">";
-
-                                    if (relatedSearches[i].before) {
-                                        out += "<span class=\"tipue_search_related_before\">" + relatedSearches[i].before + "</span> ";
-                                    }
-
-                                    out += relatedSearches[i].related;
-
-                                    if (relatedSearches[i].after) {
-                                        out += " <span class=\"tipue_search_related_after\">" + relatedSearches[i].after + "</span>";
-                                    }
-
-                                    out += "</a></div>";
-
-                                    f++;
-                                }
-                            }
-
-                            if (f) {
-                                out += "</div>";
-                            }
-                        }
-
                         if (c > set.show) {
                             var pages = Math.ceil(c / set.show);
                             var page = (start / set.show);
@@ -456,14 +420,10 @@
                 }
 
                 $("#searchResultsContainer").html(out);
+                $("#relatedSearchesContainer").html(getRelatedSearchesHtml(d));
 
                 $("#tipue_search_replaced").click(function () {
                     getTipueSearch(0, false);
-                });
-
-                $(".tipue_search_related").click(function () {
-                    $("#searchBox").val($(this).attr("id"));
-                    getTipueSearch(0, true);
                 });
 
                 $(".tipue_search_foot_box").click(function () {
@@ -476,3 +436,29 @@
         });
     };
 })(jQuery);
+
+function getRelatedSearchesHtml(searchTerm) {
+    let relatedSearches = relatedSearchesIndex.filter(r => searchTerm === r.search);
+
+    if (relatedSearches.length === 0) return "<p><i>No related searches.</i></p>";
+
+    return `
+        <p>Searches related to <i>${searchTerm}</i>:</p>
+        <ul>
+            ${relatedSearches.map(({ related }) => `
+                <li>
+                    <a href="${baseUrl}/search${searchTermToQueryString(related)}">${related}</a>
+                </li>
+            `).join("")}
+        </ul>
+    `;
+}
+
+function searchTermToQueryString(searchTerm) {
+    let serialisedSearchTerm = searchTerm
+        .trim()
+        .toLowerCase()
+        .replace(" ", "+");
+    
+    return `?query=${serialisedSearchTerm}`;
+}
