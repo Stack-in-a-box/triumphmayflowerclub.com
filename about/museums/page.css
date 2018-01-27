@@ -1,0 +1,11 @@
+article section {
+    margin-top: 40px;
+}
+
+.panelWithRightJustifiedImage {
+    align-items: center
+}
+
+.panelWithRightJustifiedImage .content {
+    text-align: center;
+}
