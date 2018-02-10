@@ -2,10 +2,6 @@ header, nav, main article, main aside, footer {
     outline: 1px solid black;
 }
 
-th, td {
-    outline: 2px solid black;
-}
-
 #container {
     outline: 2px solid black;
 }
