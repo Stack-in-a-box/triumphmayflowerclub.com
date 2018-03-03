@@ -6,6 +6,14 @@ h1 {
     font-size: 1.8em;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 @font-face {
     font-family: "uknumberplate";
     src: url("uknumberplate.woff") format("woff");
