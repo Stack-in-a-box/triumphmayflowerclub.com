@@ -5,7 +5,7 @@ html {
 
 body {
     height: 100vh;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
 }
 
@@ -15,19 +15,37 @@ header img {
 
 nav {
     display: flex;
-    height: 64px;
     align-items: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
+
+nav.about { background-image: url("graphics/nav/about.svg"); }
+nav.history { background-image: url("graphics/nav/history.svg"); }
+nav.news { background-image: url("graphics/nav/news.svg"); }
+nav.events { background-image: url("graphics/nav/events.svg"); }
+nav.photos { background-image: url("graphics/nav/photos.svg"); }
+nav.documents { background-image: url("graphics/nav/documents.svg"); }
+nav.shop { background-image: url("graphics/nav/shop.svg"); }
+nav.forum { background-image: url("graphics/nav/forum.svg"); }
+nav.contact { background-image: url("graphics/nav/contact.svg"); }
+nav.links { background-image: url("graphics/nav/links.svg"); }
+nav.search { background-image: url("graphics/nav/search.svg"); }
 
 nav ul {
     display: flex;
-    padding-left: 20px;
     flex: 1;
+    padding-top: 3px;
+    padding-left: 41px;
     list-style-type: none;
 }
 
 nav ul li {
-    padding-right: 20px;
+    padding-right: 18.5px;
+}
+
+nav ul li a {
+    color: black;
 }
 
 main {
@@ -57,12 +75,14 @@ aside img {
 }
 
 #search {
-    display: flex;
-    padding: 15px 20px;
-}
-
-#search button {
-    margin-left: 5px;
+    width: 146px;
+    margin-right: 42px;
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: none;
 }
 
 #breadcrumb {
