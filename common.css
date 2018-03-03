@@ -1,6 +1,7 @@
 html {
     height: 100vh;
     padding-left: calc(100vw - 100%);
+    background-color: #dea671;
 }
 
 body {
@@ -58,16 +59,16 @@ main {
 article {
     flex: 1;
     margin-right: 10px;
-    border: 1px solid black;
     box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+    background-color: white;
 }
 
 aside {
     width: 230px;
     margin-left: 10px;
-    border: 1px solid black;
     padding: 10px 20px;
     box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+    background-color: white;
 }
 
 aside img {
@@ -124,6 +125,8 @@ aside img {
     height: 50px;
     width: calc(100% - 40px);
     padding: 0 20px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+    background-color: white;
 }
 
 #copyright {
