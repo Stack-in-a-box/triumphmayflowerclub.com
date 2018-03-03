@@ -9,8 +9,14 @@ body {
     margin: 0 auto;
 }
 
+header {
+    height: 120px;    
+}
+
 header img {
-    margin-left: -1px;
+    width: 102%;
+    position: relative;
+    left: -11px;
 }
 
 nav {
