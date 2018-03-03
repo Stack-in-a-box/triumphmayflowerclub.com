@@ -12,5 +12,7 @@
         <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
         <li><a href="{{ site.baseurl }}/links">Links</a></li>
     </ul>
-    <input id="search" type="search" placeholder="   Type here to search">
+    <form action="{{ site.baseurl }}/search">
+        <input id="search" type="search" placeholder="   Type here to search" name="query" pattern=".{3,}" required>
+    </form>
 </nav>
