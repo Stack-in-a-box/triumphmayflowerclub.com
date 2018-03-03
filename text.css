@@ -18,6 +18,14 @@ a:hover {
     text-decoration: underline;
 }
 
+#breadcrumb {
+    font-family: derotterdam;
+}
+
+#breadcrumb li + li:before {
+    font-family: sans-serif;
+}
+
 @font-face {
     font-family: "uknumberplate";
     src: url("uknumberplate.woff") format("woff");

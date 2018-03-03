@@ -76,9 +76,9 @@ aside img {
     display: inline-block;
 }
 
-#breadcrumb li + li:before {
+#breadcrumb li:not(:last-child):after {
     content: ">";
-    padding: 0 10px;
+    padding: 0 12px 0 10px;
 }
 
 #breadcrumb li:last-child {
