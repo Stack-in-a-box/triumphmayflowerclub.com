@@ -20,22 +20,16 @@ nav {
     background-repeat: no-repeat;
 }
 
-nav.about { background-image: url("graphics/nav/about.svg"); }
-nav.history { background-image: url("graphics/nav/history.svg"); }
-nav.news { background-image: url("graphics/nav/news.svg"); }
-nav.events { background-image: url("graphics/nav/events.svg"); }
-nav.photos { background-image: url("graphics/nav/photos.svg"); }
-nav.documents { background-image: url("graphics/nav/documents.svg"); }
-nav.shop { background-image: url("graphics/nav/shop.svg"); }
-nav.forum { background-image: url("graphics/nav/forum.svg"); }
-nav.contact { background-image: url("graphics/nav/contact.svg"); }
-nav.links { background-image: url("graphics/nav/links.svg"); }
-nav.search { background-image: url("graphics/nav/search.svg"); }
+nav img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
 
 nav ul {
     display: flex;
     flex: 1;
-    padding-top: 3px;
+    padding-top: 2px;
     padding-left: 41px;
     list-style-type: none;
 }
