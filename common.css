@@ -51,8 +51,8 @@ nav ul li a {
 
 main {
     display: flex;
-    margin: 5px 0 20px;
-    padding-bottom: 50px;
+    margin-top: 5px;
+    padding-bottom: 15px;
     flex: 1;
 }
 
@@ -66,7 +66,7 @@ article {
 aside {
     width: 230px;
     margin-left: 10px;
-    padding: 10px 20px;
+    padding: 10px 20px 15px;
     box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
     background-color: white;
 }
@@ -115,19 +115,24 @@ aside img {
 }
     
 #content {
-    padding: 10px 20px 20px;
+    padding: 10px 20px 15px;
 }
 
 #footer {
+    height: 175px;
+}
+
+#footer img {
+    width: 1020px;
+    position: absolute;
+    left: -31px;
+    z-index: -1;
+}
+
+#footer .footerText {
     display: flex;
     align-items: center;
-    position: absolute;
-    bottom: 0;
-    height: 50px;
-    width: calc(100% - 40px);
-    padding: 0 20px;
-    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
-    background-color: white;
+    padding: 9px 12px 0 90px;
 }
 
 #copyright {
