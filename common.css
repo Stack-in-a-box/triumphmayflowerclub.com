@@ -93,6 +93,13 @@ aside img {
     background: none;
 }
 
+#pushpin {
+    width: 100px;
+    z-index: 0;
+    top: 133px;
+    right: -53px;
+}
+
 #breadcrumb {
     display: flex;
     list-style: none;
