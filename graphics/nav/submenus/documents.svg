@@ -1,0 +1,89 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="1000px" height="1000px" viewBox="0 0 1000 1000">
+<defs>
+<linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="0.06249999999997158" y1="465.275" x2="465.3375" y2="0.025000000000005684" spreadMethod="pad">
+<stop  offset="0%" stop-color="#AEAEF0"/>
+
+<stop  offset="100%" stop-color="#5F5FEE"/>
+</linearGradient>
+
+<filter id="Filter_1" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+<feFlood flood-color="#000000" flood-opacity="0.2" in="SourceGraphic" result="result1"/>
+
+<feComposite in2="SourceGraphic" in="result1" operator="in" result="result2"/>
+
+<feGaussianBlur in="result2" stdDeviation="16.666666666666668,16.666666666666668" result="result3"/>
+
+<feOffset dx="2.8284271247461903" dy="2.8284271247461903" in="result3" result="result4"/>
+
+<feComposite in2="result4" in="SourceGraphic" operator="over" result="result5"/>
+</filter>
+
+<filter id="Filter_2" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+<feGaussianBlur in="SourceGraphic" stdDeviation="16.666666666666668,16.666666666666668" result="result1"/>
+</filter>
+
+<filter id="Filter_3" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+<feFlood flood-color="#000000" flood-opacity="0.2980392156862745" in="SourceGraphic" result="result1"/>
+
+<feComposite in2="SourceGraphic" in="result1" operator="in" result="result2"/>
+
+<feGaussianBlur in="result2" stdDeviation="3.3333333333333335,3.3333333333333335" result="result3"/>
+
+<feOffset dx="0" dy="0" in="result3" result="result4"/>
+
+<feComposite in2="result4" in="SourceGraphic" operator="over" result="result5"/>
+</filter>
+
+<g id="Shadow_0_Layer0_0_FILL">
+<path fill="#000000" fill-opacity="0.4470588235294118" stroke="none" d="
+M 465.3 0
+L 0 0 0 465.3 465.3 465.3 465.3 0 Z"/>
+</g>
+
+<g id="Note_0_Layer0_0_FILL">
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 33.85 437.65
+Q 215.6 469.8 465.35 465.3
+L 465.35 0 0.05 0
+Q -1.4 246.45 33.85 437.65 Z"/>
+</g>
+
+<g id="Post_it_0_Layer0_0_FILL">
+<path fill="#424242" fill-opacity="0.027450980392156862" stroke="none" d="
+M 465.3 67.55
+L 465.3 1.55 1.6 1.55 1.6 67.55 465.3 67.55 Z"/>
+</g>
+
+<path id="Note_0_Layer0_0_1_STROKES" stroke="#5353E7" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 0.05 0
+L 465.35 0 465.35 465.3
+Q 215.6 469.8 33.85 437.65 -1.4 246.45 0.05 0 Z"/>
+</defs>
+
+<g filter="url(#Filter_1)" transform="matrix( 1, 0, 0, 1, 0,0) ">
+<g transform="matrix( 1.665557861328125, 0, 0, 1.665557861328125, 111.3,106.05) ">
+<g filter="url(#Filter_2)" transform="matrix( 0.6003875732421875, 0, 0, 0.6003875732421875, -66.8,-63.65) ">
+<g transform="matrix( 1.665557861328125, 0, 0, 1.665557861328125, 113.85,118.95) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Shadow_0_Layer0_0_FILL"/>
+</g>
+</g>
+</g>
+
+<g filter="url(#Filter_3)" transform="matrix( 0.6003875732421875, 0, 0, 0.6003875732421875, -66.8,-63.65) ">
+<g transform="matrix( 1.665557861328125, 0, 0, 1.665557861328125, 111.2,106.05) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Note_0_Layer0_0_FILL"/>
+
+<use xlink:href="#Note_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Post_it_0_Layer0_0_FILL"/>
+</g>
+</g>
+</g>
+</svg>
