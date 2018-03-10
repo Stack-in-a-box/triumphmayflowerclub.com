@@ -1,16 +1,46 @@
 <nav>
     <img src="{{ site.baseurl }}/graphics/nav/{{ page.section }}.svg">
     <ul>
-        <li><a href="{{ site.baseurl }}/about">About</a></li>
-        <li><a href="{{ site.baseurl }}/history">History</a></li>
-        <li><a href="{{ site.baseurl }}/news">News</a></li>
-        <li><a href="{{ site.baseurl }}/events">Events</a></li>
-        <li><a href="{{ site.baseurl }}/photos">Photos</a></li>
-        <li><a href="{{ site.baseurl }}/documents">Documents</a></li>
-        <li><a href="{{ site.baseurl }}/shop">Shop</a></li>
-        <li><a href="{{ site.baseurl }}/forum">Forum</a></li>
-        <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
-        <li><a href="{{ site.baseurl }}/links">Links</a></li>
+        <li>
+            <a href="{{ site.baseurl }}/about">About</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/about.svg">
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/history">History</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/history.svg">
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/news">News</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/news.svg">
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/events">Events</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/events.svg">
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/photos">Photos</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/photos.svg">
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/documents">Documents</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/documents.svg">
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/shop">Shop</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/shop.svg">
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/forum">Forum</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/forum.svg">
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/contact">Contact</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/contact.svg">
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/links">Links</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/links.svg">
+        </li>
     </ul>
     <form action="{{ site.baseurl }}/search">
         <input id="search" type="search" placeholder="   Type here to search" name="query" pattern=".{3,}" required>

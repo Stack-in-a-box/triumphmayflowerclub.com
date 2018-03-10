@@ -42,11 +42,26 @@ nav ul {
 }
 
 nav ul li {
+    position: relative;
     padding-right: 18.5px;
 }
 
 nav ul li a {
     color: black;
+    z-index: 2;
+}
+
+nav ul li img {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    left: -36px;
+    width: 300px;
+}
+
+nav ul li:hover img {
+    display: block;
 }
 
 main {
@@ -95,7 +110,7 @@ aside img {
 
 #pushpin {
     width: 100px;
-    z-index: 0;
+    z-index: 1;
     top: 133px;
     right: -53px;
 }
