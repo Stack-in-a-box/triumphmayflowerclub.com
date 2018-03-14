@@ -33,7 +33,7 @@ nav img {
     z-index: -1;
 }
 
-nav ul {
+nav #tabs {
     display: flex;
     flex: 1;
     padding-top: 2px;
@@ -41,32 +41,33 @@ nav ul {
     list-style-type: none;
 }
 
-nav ul li {
+nav #tabs li {
     position: relative;
     padding-right: 18.5px;
 }
 
-nav ul li a {
+nav #tabs li a {
     color: black;
     z-index: 2;
 }
 
-nav ul li img {
+nav #tabs li img {
     display: none;
     z-index: 1;
     position: absolute;
     top: 20px;
     left: -36px;
     width: 300px;
+    transform: scaleX(-1);
 }
 
-nav ul li div {
+nav #tabs li div {
     display: none;
     position: absolute;
     z-index: 2;
 }
 
-nav ul li div .postItHeading {
+nav #tabs li div .postItHeading {
     position: absolute;
     font-size: 17pt;
     line-height: 61px;
@@ -74,8 +75,17 @@ nav ul li div .postItHeading {
     text-align: center;
 }
 
-nav ul li:hover img, 
-nav ul li:hover div {
+nav #tabs li div ul {
+    list-style: disc;
+    position: absolute;
+    top: 56px;
+    left: -12px;
+    line-height: 30px;
+    width: 250px;
+}
+
+nav #tabs li:hover img, 
+nav #tabs li:hover div {
     display: block;
 }
 
