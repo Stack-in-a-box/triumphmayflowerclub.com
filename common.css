@@ -101,6 +101,7 @@ article {
     margin-right: 10px;
     box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
     background-color: white;
+    max-height: 1000000px;
 }
 
 aside {
@@ -109,6 +110,7 @@ aside {
     padding: 10px 20px 15px;
     box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
     background-color: white;
+    max-height: 1000000px;
 }
 
 aside img {
