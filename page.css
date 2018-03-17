@@ -1,4 +1,7 @@
-main aside #slideshow {
-    height: 160px;
-    line-height: 160px;
+#slideshow {
+    text-align: center;
+}
+
+#slideshow img {
+    margin-bottom: 7px;
 }

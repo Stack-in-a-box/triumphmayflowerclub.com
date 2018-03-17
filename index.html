@@ -1,6 +1,7 @@
 ---
 section: about
 customstyles: true
+scripts: <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" defer></script>
 ---
 
 <main>
@@ -17,8 +18,8 @@ customstyles: true
     </article>
     <aside>
         <div id="photos">
-            <h2>Photos</h2>
-            <div id="slideshow" class="imagePlaceholder">Photo slideshow...</div>
+            <h2>Car of the day</h2>
+            <div id="slideshow"></div>
         </div>
         <div id="news">
             <h2>News</h2>
@@ -35,4 +36,6 @@ customstyles: true
             <a href="news">See more...</a>
         </div>
     </aside>
+    <script>const siteBaseUrl = "{{ site.baseurl }}";</script>
+    <script src="{{ site.baseurl }}/slideshow/slideshow.js" defer></script>
 </main>
