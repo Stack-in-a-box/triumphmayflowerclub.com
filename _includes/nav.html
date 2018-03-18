@@ -1,18 +1,138 @@
 <nav>
-    <ul>
-        <li><a class="sectionComplete" href="{{ site.baseurl }}/about">About</a></li>
-        <li><a class="sectionComplete" href="{{ site.baseurl }}/history">History</a></li>
-        <li><a class="sectionInProgress" href="{{ site.baseurl }}/news">News</a></li>
-        <li><a class="sectionComplete" href="{{ site.baseurl }}/events">Events</a></li>
-        <li><a class="sectionComplete" href="{{ site.baseurl }}/photos">Photos</a></li>
-        <li><a class="sectionComplete" href="{{ site.baseurl }}/documents">Documents</a></li>
-        <li><a class="sectionComplete" href="{{ site.baseurl }}/shop">Shop</a></li>
-        <li><a class="sectionComplete" href="{{ site.baseurl }}/forum">Forum</a></li>
-        <li><a class="sectionComplete" href="{{ site.baseurl }}/contact">Contact</a></li>
-        <li><a class="sectionComplete" href="{{ site.baseurl }}/links">Links</a></li>
+    <img src="{{ site.baseurl }}/graphics/nav/{{ page.section }}.svg">
+    <ul id="tabs">
+        <li>
+            <a href="{{ site.baseurl }}/about">About</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/about.svg">
+            <div>
+                <a class="postItHeading" href="{{ site.baseurl }}/about">About</a>
+                <ul>
+                    <li><a href="{{ site.baseurl }}/about#theClub">The club</a></li>
+                    <li><a href="{{ site.baseurl }}/about#theMayflower">The Mayflower</a></li>
+                    <li><a href="{{ site.baseurl }}/about#triumphMotorCompany">Triumph Motor Company</a></li>
+                    <li><a href="{{ site.baseurl }}/about/honoursboards">Honours boards</a></li>
+                    <li><a href="{{ site.baseurl }}/about/aroundtheworld">Around the world</a></li>
+                    <li><a href="{{ site.baseurl }}/about/museums">In museums</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/history">History</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/history.svg">
+            <div>
+                <a class="postItHeading" href="{{ site.baseurl }}/history">History</a>
+                <ul>
+                    <li><a href="{{ site.baseurl }}/history/mayflower">The Triumph Mayflower</a></li>
+                    <li><a href="{{ site.baseurl }}/history/standard">The Standard Motor Company Limited</a></li>
+                    <li><a href="{{ site.baseurl }}/history/club">The Triumph Mayflower Club and Flower Power magazine</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/news">News</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/news.svg">
+            <div>
+                <a class="postItHeading" href="{{ site.baseurl }}/news">News</a>
+                <ul>
+                    <li><a href="{{ site.baseurl }}/news/newvenueforthe2018agm">New Venue for the 2018 AGM</a></li>
+                    <li><a href="{{ site.baseurl }}/news/launchofthenewclubwebsite">Launch of the New Club Website</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/events">Events</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/events.svg">
+            <div>
+                <a class="postItHeading" href="{{ site.baseurl }}/events">Events</a>
+                <ul>
+                    <li><a href="{{ site.baseurl }}/events/rallies">Rallies</a></li>
+                    <li><a href="{{ site.baseurl }}/events/local">Local events</a></li>
+                    <li><a href="{{ site.baseurl }}/events/calendars">Event calendars</a></li>
+                    <li><a href="{{ site.baseurl }}/events/aroundtheworld">Around the world</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/photos">Photos</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/photos.svg">
+            <div>
+                <a class="postItHeading" href="{{ site.baseurl }}/photos">Photos</a>
+                <ul>
+                    <li><a href="{{ site.baseurl }}/photos/cars">Members’ cars</a></li>
+                    <li><a href="{{ site.baseurl }}/photos/events">Rallies and events</a></li>
+                    <li><a href="{{ site.baseurl }}/photos/builds">Car builds</a></li>
+                    <li><a href="{{ site.baseurl }}/photos/tlcneeded">Cars needing some love</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/documents">Documents</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/documents.svg">
+            <div>
+                <a class="postItHeading" href="{{ site.baseurl }}/documents">Documents</a>
+                <ul>
+                    <li><a href="{{ site.baseurl }}/documents/technical">Technical documentation</a></li>
+                    <li><a href="{{ site.baseurl }}/documents/flowerpowers">Flower Power archive</a></li>
+                    <li><a href="{{ site.baseurl }}/documents/flowerpowers/articles">FP technical articles</a></li>
+                    <li><a href="{{ site.baseurl }}/documents/agms">Annual general meetings</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/shop">Shop</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/shop.svg">
+            <div>
+                <a class="postItHeading" href="{{ site.baseurl }}/shop">Shop</a>
+                <ul>
+                    <li><a href="{{ site.baseurl }}/shop/membership">Club membership</a></li>
+                    <li><a href="{{ site.baseurl }}/shop/classifieds">Members’ classifieds</a></li>
+                    <li><a href="{{ site.baseurl }}/shop/regalia">Regalia</a></li>
+                    <li><a href="{{ site.baseurl }}/shop/spares">Spares</a></li>
+                    <li><a href="{{ site.baseurl }}/shop/suppliers">External suppliers</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/forum">Forum</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/forum.svg">
+            <div>
+                <a class="postItHeading" href="{{ site.baseurl }}/forum">Forum</a>
+                <ul>
+                    <li><a href="{{ site.baseurl }}/forum">Coming soon…</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/contact">Contact</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/contact.svg">
+            <div>
+                <a class="postItHeading" href="{{ site.baseurl }}/contact">Contact</a>
+                <ul>
+                    <li><a href="{{ site.baseurl }}/contact#members">Members</a></li>
+                    <li><a href="{{ site.baseurl }}/contact#committee">Committee</a></li>
+                    <li><a href="{{ site.baseurl }}/contact#robDavies">Website editor</a></li>
+                    <li><a href="{{ site.baseurl }}/contact#andyDavies">Webmaster</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}/links">Links</a>
+            <img src="{{ site.baseurl }}/graphics/nav/submenus/links.svg">
+            <div>
+                <a class="postItHeading" href="{{ site.baseurl }}/links">Links</a>
+                <ul>
+                    <li><a href="http://legacy.triumphmayflowerclub.com/" target="_blank">The old TMC website</a></li>
+                    <li><a href="http://www.tssc.org.uk/" target="_blank">Triumph Sports Six Club</a></li>
+                    <li><a href="http://www.standardmotorclub.org/" target="_blank">Standard Motor Club</a></li>
+                    <li><a href="http://www.triumphroadster.org.uk/" target="_blank">Triumph Roadster Club</a></li>
+                    <li><a href="http://www.trocltd.com/" target="_blank">Razoredge Owners’ Club</a></li>
+                    <li><a href="{{ site.baseurl }}/links#clubTriumphHolland">See more…</a></li>
+                </ul>
+            </div>
+        </li>
     </ul>
-    <div id="search">
-        <input type="search">
-        <button>Search</button>
-    </div>
+    <form action="{{ site.baseurl }}/search">
+        <input id="search" type="search" placeholder="   Type here to search" name="query" pattern=".{3,}" required>
+    </form>
+    <img id="pushpin" src="{{ site.baseurl }}/graphics/pushpin.svg">
 </nav>

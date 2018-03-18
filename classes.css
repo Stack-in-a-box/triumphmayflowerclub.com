@@ -21,7 +21,8 @@
     font-size: small;
 }
 
-.author, .date {
+.metadata {
+    font-family: europa;    
     font-style: italic;
 }
 
@@ -64,7 +65,34 @@
 .imageCaption {
     margin-top: 7px;
     text-align: center;
-    font-family: sans-serif;
     font-weight: bold;
     font-size: 12px;
+}
+
+.notice {
+    position: relative;
+    margin-top: 11px;
+}
+
+.notice .paper {
+    width: 100%;
+}
+
+.notice .pushpin {
+    position: absolute;
+    top: -40px;
+    right: -50px;
+    width: 100px;
+}
+
+.notice p {
+    position: absolute;
+    top: 0;
+    left: 71px;
+    line-height: 24px;
+    width: 525px;
+}
+
+.notice p a {
+    font-style: italic;
 }

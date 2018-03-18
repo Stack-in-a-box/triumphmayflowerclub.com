@@ -1,48 +1,116 @@
 html {
     height: 100vh;
     padding-left: calc(100vw - 100%);
+    background-color: #dea671;
 }
 
 body {
     height: 100vh;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
 }
 
+header {
+    height: 120px;    
+}
+
 header img {
-    margin-left: -1px;
+    width: 102%;
+    position: relative;
+    left: -11px;
 }
 
 nav {
     display: flex;
-    height: 64px;
     align-items: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
-nav ul {
+nav img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+nav #tabs {
     display: flex;
-    padding-left: 20px;
     flex: 1;
+    padding-top: 2px;
+    padding-left: 41px;
     list-style-type: none;
 }
 
-nav ul li {
-    padding-right: 20px;
+nav #tabs li {
+    position: relative;
+    padding-right: 18.5px;
+}
+
+nav #tabs li a {
+    color: black;
+    z-index: 2;
+}
+
+nav #tabs li img {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    left: -36px;
+    width: 300px;
+    transform: scaleX(-1);
+}
+
+nav #tabs li div {
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+
+nav #tabs li div .postItHeading {
+    position: absolute;
+    font-size: 17pt;
+    line-height: 61px;
+    width: 228px;
+    text-align: center;
+}
+
+nav #tabs li div ul {
+    list-style: disc;
+    position: absolute;
+    top: 56px;
+    left: -15px;
+    line-height: 30px;
+    width: 235px;
+}
+
+nav #tabs li:hover img, 
+nav #tabs li:hover div {
+    display: block;
 }
 
 main {
     display: flex;
-    padding-bottom: 50px;
+    margin-top: 5px;
+    padding-bottom: 15px;
     flex: 1;
 }
 
 article {
-    flex: 1;    
+    flex: 1;
+    margin-right: 10px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    max-height: 1000000px;
 }
 
 aside {
     width: 230px;
-    padding: 10px 20px;
+    margin-left: 10px;
+    padding: 10px 20px 15px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    max-height: 1000000px;
 }
 
 aside img {
@@ -57,28 +125,38 @@ aside img {
 }
 
 #search {
-    display: flex;
-    padding: 15px 20px;
+    width: 146px;
+    margin-right: 42px;
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: none;
 }
 
-#search button {
-    margin-left: 5px;
+#pushpin {
+    width: 100px;
+    z-index: 1;
+    top: 133px;
+    right: -53px;
 }
 
 #breadcrumb {
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 9px 20px 7px;
+    padding: 9px 20px;
+    border-bottom: 1px dashed lightgrey;
 }
 
 #breadcrumb li {
     display: inline-block;
 }
 
-#breadcrumb li + li:before {
+#breadcrumb li:not(:last-child):after {
     content: ">";
-    padding: 0 10px;
+    padding: 0 12px 0 10px;
 }
 
 #breadcrumb li:last-child {
@@ -86,17 +164,24 @@ aside img {
 }
     
 #content {
-    padding: 10px 20px 20px;
+    padding: 10px 20px 15px;
 }
 
 #footer {
+    height: 175px;
+}
+
+#footer img {
+    width: 1020px;
+    position: absolute;
+    left: -31px;
+    z-index: -1;
+}
+
+#footer .footerText {
     display: flex;
     align-items: center;
-    position: absolute;
-    bottom: 0;
-    height: 50px;
-    width: calc(100% - 40px);
-    padding: 0 20px;
+    padding: 9px 12px 0 90px;
 }
 
 #copyright {
