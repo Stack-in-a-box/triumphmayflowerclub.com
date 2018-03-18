@@ -21,7 +21,8 @@
     font-size: small;
 }
 
-.author, .date {
+.metadata {
+    font-family: europa;    
     font-style: italic;
 }
 
