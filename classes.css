@@ -96,3 +96,8 @@
 .notice p a {
     font-style: italic;
 }
+
+.disableListStyles {
+    list-style-type: none;
+    padding: 0;
+}
