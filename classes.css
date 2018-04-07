@@ -87,7 +87,7 @@
 
 .notice p {
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 71px;
     line-height: 24px;
     width: 525px;
