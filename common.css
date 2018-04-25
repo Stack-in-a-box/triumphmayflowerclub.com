@@ -176,6 +176,8 @@ blockquote {
 }
 
 #footer {
+    display: flex;
+    align-items: start;
     height: 175px;
 }
 
@@ -189,7 +191,7 @@ blockquote {
 #footer .footerText {
     display: flex;
     align-items: center;
-    padding: 9px 12px 0 90px;
+    padding: 9px 12px 0 12px;
 }
 
 #copyright {
@@ -202,4 +204,25 @@ blockquote {
 
 #developer {
     font-style: italic;
+}
+
+#backToTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 91px;
+    height: 62px;
+}
+
+#backToTop .upArrow {
+    font-size: 26pt;
+    text-decoration: none;
+}
+
+#backToTop .text {
+    width: 45px;
+    text-align: center;
+    font-size: 10pt;
+    font-style: italic;
+    line-height: 13px;
 }
