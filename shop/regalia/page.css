@@ -23,6 +23,10 @@ article section + section {
     align-items: center;  
 }
 
+.listingDetails h2 {
+    font-size: 16pt;
+}
+
 article img {
     height: 200px;
 }
