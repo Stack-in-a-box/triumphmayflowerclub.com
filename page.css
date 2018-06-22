@@ -5,3 +5,8 @@
 #slideshow img {
     margin-bottom: 7px;
 }
+
+.notice p {
+    top: 9px;
+    line-height: 19px;
+}
