@@ -6,7 +6,6 @@
     margin-bottom: 7px;
 }
 
-.notice p {
-    top: 9px;
-    line-height: 19px;
+.paper {
+    filter: hue-rotate(-75deg);
 }
