@@ -104,6 +104,10 @@ article {
     max-height: 1000000px;
 }
 
+article.noticePage {
+    margin: 15px 0 0;
+}
+
 aside {
     width: 230px;
     margin-left: 10px;
