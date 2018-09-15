@@ -1,6 +1,5 @@
 $(document).ready(() => {
     const imageDetails = [
-        { registration: "DH-74-29", caption: "Nico Poortvliet’s Mayflower" },
         { registration: "ODV 692", caption: "John Castle’s Mayflower" },
         { registration: "617 YUA", caption: "Chad Brown’s Mayflower, “Little Nell”" },
         { registration: "KSK 160", caption: "Mike Clement’s Mayflower" },
