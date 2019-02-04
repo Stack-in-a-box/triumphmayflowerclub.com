@@ -8,7 +8,8 @@ $(document).ready(() => {
         { registration: "HBX 957", caption: "Mark Smith’s Mayflower" },
         { registration: "DM-42-72", caption: "Nico ten Wolde’s Mayflower" },
         { registration: "KSF 804", caption: "Louis Lemaire’s Mayflower" },
-        { registration: "HBX 957", caption: "Mark Smith’s Mayflower" }
+        { registration: "HBX 957", caption: "Mark Smith’s Mayflower" },
+        { registration: "USA 123", caption: "Russ Hoenig’s Mayflower" }
     ];
 
     const millisecondsSinceEpoch = new Date();
