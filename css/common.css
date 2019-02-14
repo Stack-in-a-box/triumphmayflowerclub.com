@@ -1,7 +1,8 @@
 html {
     height: 100vh;
     padding-left: calc(100vw - 100%);
-    background-color: #dea671;
+    background-image: url("/graphics/background.jpg");
+    background-color: #ce9661;
 }
 
 body {
