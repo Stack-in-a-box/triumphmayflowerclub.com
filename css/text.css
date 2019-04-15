@@ -48,15 +48,15 @@ a:hover {
 
 @font-face {
     font-family: "uknumberplate";
-    src: url("uknumberplate.woff") format("woff");
+    src: url("../fonts/uknumberplate.woff") format("woff");
 }
 
 @font-face {
     font-family: "derotterdam";
-    src: url("derotterdam.woff") format("woff");
+    src: url("../fonts/derotterdam.woff") format("woff");
 }
 
 @font-face {
     font-family: "wafflesoft";
-    src: url("wafflesoft.woff") format("woff");
+    src: url("../fonts/wafflesoft.woff") format("woff");
 }
