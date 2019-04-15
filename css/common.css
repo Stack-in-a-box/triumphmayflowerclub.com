@@ -97,6 +97,7 @@ main {
 }
 
 article {
+    width: 670px;
     flex: 1;
     margin-right: 10px;
     box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
@@ -157,6 +158,7 @@ blockquote {
 #breadcrumb {
     display: flex;
     list-style: none;
+    white-space: nowrap;
     margin: 0;
     padding: 9px 20px;
     border-bottom: 1px dashed lightgrey;
@@ -173,6 +175,9 @@ blockquote {
 
 #breadcrumb li:last-child {
     font-style: italic;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 3px;
 }
     
 #content {
