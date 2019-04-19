@@ -101,3 +101,12 @@
     list-style-type: none;
     padding: 0;
 }
+
+.pagination {
+    text-align: center;
+    font-size: 13pt;
+}
+
+.pagination span {
+    font-size: 15pt;
+}
