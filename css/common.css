@@ -18,6 +18,12 @@ body #decorations {
     overflow: hidden;
 }
 
+body #decorations #ruler {
+    position: absolute;
+    top: -120px;
+    right: calc(50vw + 350px);
+}
+
 body #decorations #coffee {
     position: absolute;
     top: -100px;
