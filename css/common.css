@@ -20,7 +20,14 @@ body #decorations {
 
 body #decorations #coffee {
     position: absolute;
-    left: calc(50vw + 280px);
+    top: -100px;
+    left: calc(50vw + 290px);
+}
+
+body #decorations #pen {
+    position: absolute;
+    top: 425px;
+    left: calc(50vw + 450px);
 }
 
 body #body {
