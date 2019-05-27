@@ -5,3 +5,9 @@
 #slideshow img {
     margin-bottom: 7px;
 }
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
