@@ -21,14 +21,14 @@ body #decorations {
 body #decorations #ruler {
     position: absolute;
     top: -120px;
-    right: calc(50vw + 350px);
+    right: calc(50vw - (100vw - 100%) + 350px);
 }
 
 body #decorations #paperclip {
     position: absolute;
     transform: rotate(-20deg);
     top: 146px;
-    right: calc(50vw + 419px);
+    right: calc(50vw - (100vw - 100%) + 434px);
     z-index: 1;
 }
 
@@ -202,7 +202,7 @@ blockquote {
     list-style: none;
     white-space: nowrap;
     margin: 0;
-    padding: 9px 20px 9px 55px;
+    padding: 9px 20px 9px 58px;
     border-bottom: 1px dashed lightgrey;
 }
 
