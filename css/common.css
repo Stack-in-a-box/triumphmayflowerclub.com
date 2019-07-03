@@ -24,6 +24,13 @@ body #decorations #ruler {
     right: calc(50vw - (100vw - 100%) + 350px);
 }
 
+body #decorations #stain {
+    position: absolute;
+    top: 405px;
+    right: calc(50vw - (100vw - 100%) + 355px);
+    opacity: 0.4;
+}
+
 body #decorations #paperclip {
     position: absolute;
     transform: rotate(-20deg);
