@@ -1,7 +1,9 @@
 .card {
     margin-bottom: 20px;
     padding: 0 10px;
-    border: 1px dashed black;
+    border: 1px dashed grey;
+    background: #f0f0f0;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.4);
 }
 
 .card h3 {
@@ -19,6 +21,8 @@
 .card p {
     margin: 8px 0 10px;
     font-size: small;
+    border-right: 1px solid grey;
+    padding-right: 5px;
 }
 
 .metadata {
@@ -100,4 +104,13 @@
 .disableListStyles {
     list-style-type: none;
     padding: 0;
+}
+
+.pagination {
+    text-align: center;
+    font-size: 13pt;
+}
+
+.pagination span {
+    font-size: 15pt;
 }

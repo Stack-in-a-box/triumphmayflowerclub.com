@@ -1,7 +1,36 @@
+#photos {
+    position: relative;
+}
+
+#sellotape1 {
+    top: 31px;
+    left: -21px;
+}
+
+#sellotape2 {
+    right: -20px;
+    bottom: 36px;
+}
+
 #slideshow {
     text-align: center;
 }
 
 #slideshow img {
-    margin-bottom: 7px;
+    margin: 10px 8px 7px 8px;
+    width: calc(100% - 16px);
+    box-shadow: 1px 1px 3px;
+    color: grey;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+
+.sellotape {
+    position: absolute;
+    z-index: 1;
+    width: 75px;
 }
