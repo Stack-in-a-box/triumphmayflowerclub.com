@@ -262,8 +262,9 @@ blockquote {
     flex: 1;
 }
 
-#updated {
+#version {
     padding: 0 45px;
+    text-align: center;
 }
 
 #developer {
