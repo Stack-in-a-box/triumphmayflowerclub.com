@@ -300,3 +300,10 @@ blockquote {
     top: 68px;
     left: 88px;
 }
+
+#links {
+    position: absolute;
+    top: 81px;
+    left: 204px;
+    line-height: 24px;
+}
