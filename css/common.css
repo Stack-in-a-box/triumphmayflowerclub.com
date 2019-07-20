@@ -238,6 +238,7 @@ blockquote {
 }
 
 #footer {
+    position: relative; 
     display: flex;
     align-items: start;
     height: 175px;
@@ -245,7 +246,7 @@ blockquote {
     box-shadow: 10px 19px 6px 2px rgba(0, 0, 0, 0.4);
 }
 
-#footer img {
+#notepad {
     width: 1020px;
     position: absolute;
     left: -31px;
@@ -291,4 +292,11 @@ blockquote {
     font-size: 10pt;
     font-style: italic;
     line-height: 13px;
+}
+
+#emblem {
+    position: absolute;
+    width: 120px;
+    top: 68px;
+    left: 88px;
 }
