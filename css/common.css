@@ -1,17 +1,69 @@
 html {
     height: 100vh;
+    min-height: 1050px;
     padding-left: calc(100vw - 100%);
-    background-color: #dea671;
+    background-image: url("/graphics/background.jpg");
+    background-color: #ce9661;
 }
 
 body {
+    margin: 0;
+}
+
+body #decorations {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100vw - (100vw - 100%));
     height: 100vh;
+    min-height: 1050px;
+    overflow: hidden;
+}
+
+body #decorations #ruler {
+    position: absolute;
+    top: -120px;
+    right: calc(50vw - (100vw - 100%) + 350px);
+}
+
+body #decorations #stain {
+    position: absolute;
+    top: 405px;
+    right: calc(50vw - (100vw - 100%) + 355px);
+    opacity: 0.4;
+}
+
+body #decorations #paperclip {
+    position: absolute;
+    transform: rotate(-20deg);
+    top: 146px;
+    right: calc(50vw - (100vw - 100%) + 434px);
+    z-index: 1;
+}
+
+body #decorations #coffee {
+    position: absolute;
+    top: -100px;
+    left: calc(50vw + 290px);
+}
+
+body #decorations #pen {
+    position: absolute;
+    top: 425px;
+    left: calc(50vw + 450px);
+}
+
+body #body {
+    position: relative;
+    height: 100vh;
+    min-height: 1050px;
     width: 960px;
     margin: 0 auto;
 }
 
 header {
-    height: 120px;    
+    height: 120px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
 header img {
@@ -53,7 +105,7 @@ nav #tabs li a {
 
 nav #tabs li img {
     display: none;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     top: 20px;
     left: -36px;
@@ -134,7 +186,8 @@ blockquote {
     display: flex;
     flex-direction: column;
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 1050px;
 }
 
 #search {
@@ -160,7 +213,7 @@ blockquote {
     list-style: none;
     white-space: nowrap;
     margin: 0;
-    padding: 9px 20px;
+    padding: 9px 20px 9px 58px;
     border-bottom: 1px dashed lightgrey;
 }
 
@@ -188,6 +241,8 @@ blockquote {
     display: flex;
     align-items: start;
     height: 175px;
+    min-height: 175px;
+    box-shadow: 10px 19px 6px 2px rgba(0, 0, 0, 0.4);
 }
 
 #footer img {
