@@ -1,12 +1,77 @@
 <footer id="footer">
-    <img src="{{ site.baseurl }}/graphics/footer.svg">
+    <img id="notepad" src="{{ site.baseurl }}/graphics/footer.svg">
     <div id="backToTop">
         <a href="#" class="upArrow">⬆&#xFE0E;</a>
         <a href="#" class="text">Back<br>to the<br>top</a>
     </div>
     <div class="footerText">
-        <span id="copyright">Copyright © Triumph Mayflower Club 2005-{{ "now" | date: "%Y" }}</span>
-        <span id="updated"><a href="https://github.com/Stack-in-a-box/triumphmayflowerclub.com/releases" target="_blank">Last updated: {{ "now" | date: "%d/%m/%Y" }}</a></span>
-        <span id="developer">Website designed and maintained by <a href="https://www.github.com/andidavies92" target="_blank">Andi Emma Davies</a></span>
+        <div id="copyright">Copyright © Triumph Mayflower Club 2005-{{ "now" | date: "%Y" }}</div>
+        <div id="version">
+            <div>
+                <a href="https://www.github.com/Stack-in-a-box/triumphmayflowerclub.com/releases" target="_blank">
+                    <b>Last updated:</b> {{ "now" | date: "%d/%m/%Y" }}
+                </a>
+            </div>
+            <div>
+                <a href="https://www.github.com/Stack-in-a-box/triumphmayflowerclub.com/releases/latest" target="_blank">
+                    <b>Website version:</b> <span id="latest"></span>
+                    <script async>
+                        (async () => {
+                            const response = await fetch("https://api.github.com/repos/Stack-in-a-box/triumphmayflowerclub.com/releases/latest");
+                            const json = await response.json();
+
+                            document.getElementById("latest").innerText = json.tag_name;
+                        })();
+                    </script>
+                </a>
+            </div>
+        </div>
+        <div id="maintainers">
+            <div>Website designed and maintained by <a href="https://www.github.com/andidavies92" target="_blank">Andi Emma Davies</a></div>
+            <div>Website content curated and edited by <a href="mailto:robertldavies@btinternet.com?subject=Triumph%20Mayflower%20Club" target="_blank">Rob Davies</a></div>
+        </div>
+    </div>
+    <img id="emblem" src="{{ site.baseurl }}/graphics/emblem.png" alt="Emblem">
+    <div id="links">
+        <div>
+            <a href="{{ site.baseurl }}/about">About us</a>
+        </div>
+        <div>
+            <a href="{{ site.baseurl }}/news">Latest news</a>
+        </div>
+        <div>
+            <a href="{{ site.baseurl }}/contact">Get in-touch</a>
+        </div>
+    </div>
+    <form id="membership" action="{{ site.baseurl }}/shop/membership" method="get">
+        <button class="numberPlateMarker" type="submit">Become a member today</button>
+    </form>
+    <div id="chairs">
+        <div id="roles">
+            <span>Chairman</span>
+            <span>Vice Chairman</span>
+        </div>
+        <div id="names">
+            <a href="{{ site.baseurl }}/contact#johnCastle">
+                <b>John Castle</b>
+            </a>
+            <a href="{{ site.baseurl }}/contact#paulBurgess">
+                <b>Paul Burgess</b>
+            </a>
+        </div>
+    </div>
+    <div id="socials">
+        <div id="facebook">
+            <a href="https://www.facebook.com/triumphmayflowerclub" target="_blank">Follow us on Facebook</a>
+            <img src="{{ site.baseurl }}/graphics/facebook.png" alt="Facebook Icon">
+        </div>
+        <div id="github">
+            <a href="https://www.github.com/Stack-in-a-box/triumphmayflowerclub.com" target="_blank">Made with ❤ on GitHub</a>
+            <img src="{{ site.baseurl }}/graphics/github.png" alt="GitHub">
+        </div>
+        <div id="gdpr">
+            <a href="{{ site.baseurl }}/news/gdprcompliance">Read our GDPR policy</a>
+            <img src="{{ site.baseurl }}/graphics/gdpr.png" alt="GDPR">
+        </div>
     </div>
 </footer>

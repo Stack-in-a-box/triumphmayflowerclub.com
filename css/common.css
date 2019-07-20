@@ -238,6 +238,7 @@ blockquote {
 }
 
 #footer {
+    position: relative; 
     display: flex;
     align-items: start;
     height: 175px;
@@ -245,7 +246,7 @@ blockquote {
     box-shadow: 10px 19px 6px 2px rgba(0, 0, 0, 0.4);
 }
 
-#footer img {
+#notepad {
     width: 1020px;
     position: absolute;
     left: -31px;
@@ -255,19 +256,21 @@ blockquote {
 #footer .footerText {
     display: flex;
     align-items: center;
-    padding: 9px 12px 0 12px;
+    padding: 10px 12px 0 12px;
 }
 
 #copyright {
     flex: 1;
 }
 
-#updated {
+#version {
     padding: 0 45px;
+    text-align: center;
 }
 
-#developer {
+#maintainers {
     font-style: italic;
+    text-align: right;
 }
 
 #backToTop {
@@ -289,4 +292,68 @@ blockquote {
     font-size: 10pt;
     font-style: italic;
     line-height: 13px;
+}
+
+#emblem {
+    position: absolute;
+    width: 120px;
+    top: 68px;
+    left: 88px;
+}
+
+#links {
+    position: absolute;
+    top: 81px;
+    left: 204px;
+    line-height: 24px;
+}
+
+#membership {
+    position: absolute;
+    top: 76px;
+    left: 378px;
+}
+
+#membership button {
+    cursor: pointer;
+    font-size: 17pt;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 1);
+}
+
+#chairs {
+    position: absolute;
+    top: 130px;
+    left: 395px;
+}
+
+#chairs #roles {
+    margin-left: 8px;
+}
+
+#chairs #roles span + span {
+    margin-left: 57px;
+}
+
+#chairs #names a + a {
+    margin-left: 48px;
+}
+
+#socials {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    top: 82px;
+    right: 10px;
+    line-height: 23.5px;
+}
+
+#socials div {
+    display: flex;
+}
+
+#socials img {
+    align-self: center;
+    height: 18px;
+    margin-left: 5px;
 }
