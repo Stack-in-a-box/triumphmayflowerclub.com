@@ -1,5 +1,6 @@
 html {
     height: 100vh;
+    min-height: 1050px;
     padding-left: calc(100vw - 100%);
     background-image: url("/graphics/background.jpg");
     background-color: #ce9661;
@@ -15,6 +16,7 @@ body #decorations {
     top: 0;
     width: calc(100vw - (100vw - 100%));
     height: 100vh;
+    min-height: 1050px;
     overflow: hidden;
 }
 
@@ -54,6 +56,7 @@ body #decorations #pen {
 body #body {
     position: relative;
     height: 100vh;
+    min-height: 1050px;
     width: 960px;
     margin: 0 auto;
 }
@@ -183,7 +186,8 @@ blockquote {
     display: flex;
     flex-direction: column;
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 1050px;
 }
 
 #search {
@@ -237,6 +241,7 @@ blockquote {
     display: flex;
     align-items: start;
     height: 175px;
+    min-height: 175px;
     box-shadow: 10px 19px 6px 2px rgba(0, 0, 0, 0.4);
 }
 
