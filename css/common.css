@@ -267,8 +267,9 @@ blockquote {
     text-align: center;
 }
 
-#developer {
+#maintainers {
     font-style: italic;
+    text-align: right;
 }
 
 #backToTop {
