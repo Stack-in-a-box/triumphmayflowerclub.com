@@ -310,12 +310,30 @@ blockquote {
 
 #membership {
     position: absolute;
-    top: 75px;
+    top: 65px;
     left: 355px;
 }
 
 #membership button {
     cursor: pointer;
-    font-size: 18pt;
-    box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 1);
+    font-size: 17pt;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 1);
+}
+
+#chairs {
+    position: absolute;
+    top: 108px;
+    left: 375px;
+}
+
+#chairs #roles {
+    margin-left: 8px;
+}
+
+#chairs #roles span + span {
+    margin-left: 57px;
+}
+
+#chairs #names a + a {
+    margin-left: 48px;
 }
