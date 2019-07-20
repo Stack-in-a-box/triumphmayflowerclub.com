@@ -307,3 +307,15 @@ blockquote {
     left: 204px;
     line-height: 24px;
 }
+
+#membership {
+    position: absolute;
+    top: 75px;
+    left: 355px;
+}
+
+#membership button {
+    cursor: pointer;
+    font-size: 18pt;
+    box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 1);
+}
