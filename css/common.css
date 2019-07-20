@@ -256,7 +256,7 @@ blockquote {
 #footer .footerText {
     display: flex;
     align-items: center;
-    padding: 9px 12px 0 12px;
+    padding: 10px 12px 0 12px;
 }
 
 #copyright {
@@ -310,8 +310,8 @@ blockquote {
 
 #membership {
     position: absolute;
-    top: 65px;
-    left: 355px;
+    top: 76px;
+    left: 378px;
 }
 
 #membership button {
@@ -322,8 +322,8 @@ blockquote {
 
 #chairs {
     position: absolute;
-    top: 108px;
-    left: 375px;
+    top: 130px;
+    left: 395px;
 }
 
 #chairs #roles {
@@ -336,4 +336,24 @@ blockquote {
 
 #chairs #names a + a {
     margin-left: 48px;
+}
+
+#socials {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    top: 82px;
+    right: 10px;
+    line-height: 23.5px;
+}
+
+#socials div {
+    display: flex;
+}
+
+#socials img {
+    align-self: center;
+    height: 18px;
+    margin-left: 5px;
 }
