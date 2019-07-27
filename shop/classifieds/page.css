@@ -1,8 +1,12 @@
-article section .listing {
-    display: flex;
-    align-items: center;
+.listing {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    border: 1px dashed grey;
+    background: #f0f0f0;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.4);
 }
 
-article section .listing img {
-    margin-right: 20px;
+.listing img {
+    float: right;
+    padding: 20px 0 0 20px;
 }
