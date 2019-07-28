@@ -1,6 +1,7 @@
 ---
 title: Members-only Test Page
 section: test
+scripts: <script src="/members/members.js" defer></script>
 ---
 
 <main>
@@ -13,10 +14,9 @@ section: test
         </ol>
         <div id="content">
             <h1>Members-only Test Page</h1>
-            <p>This content can be shown whether logged-in or not.</p>
-            <div class="membersOnly">
-                <p>This content should only be shown when a member is logged-in.</p>
-            </div>
+            <p>This line exhibits content that can be shown whether logged-in or not.</p>
+            <p>If a user is logged-in, there should be content shown below:</p>
+            <div id="membersOnly"></div>
         </div>
     </article>
     <aside>
