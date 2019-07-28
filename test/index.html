@@ -1,5 +1,5 @@
 ---
-title: Blank Test Page
+title: Members-only Test Page
 section: test
 ---
 
@@ -9,10 +9,14 @@ section: test
             <li>
                 <a href="{{ site.baseurl }}/">Home</a>
             </li>
-            <li>Blank Test Page</li>
+            <li>Members-only Test Page</li>
         </ol>
         <div id="content">
-            <h1>Blank Test Page</h1>
+            <h1>Members-only Test Page</h1>
+            <p>This content can be shown whether logged-in or not.</p>
+            <div class="membersOnly">
+                <p>This content should only be shown when a member is logged-in.</p>
+            </div>
         </div>
     </article>
     <aside>
