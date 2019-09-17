@@ -150,7 +150,6 @@ main {
 
 article {
     width: 670px;
-    flex: 1;
     margin-right: 10px;
     box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
     background-color: white;
