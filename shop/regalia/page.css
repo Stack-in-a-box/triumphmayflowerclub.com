@@ -1,32 +1,39 @@
-#listings {
-    display: table;
-    width: 100%;
+.listing {
+    margin: 60px 0 5px;
 }
 
-.listingRow {
-    display: table-row;
+.listing .listingTitle {
+    font-size: 20pt;
 }
 
-article section {
-    display: table-cell;
-    padding-right: 10px;
-    width: 50%;
-}
-
-article section + section {
-    padding-right: 0;
-    padding-left: 10px;
-}
-
-.listingDetails {
+.listing .listingContent {
     display: flex;
-    align-items: center;  
+    align-items: center;
 }
 
-.listingDetails h2 {
-    font-size: 16pt;
-}
-
-article img {
+.listing .listingContent .listingPhoto {
+    border: 1px solid darkgrey;
     height: 200px;
+}
+
+.listing .listingContent .listingDetails {
+    margin-left: 20px;
+    height: 100%;
+    text-align: center;
+}
+
+.listing .listingContent .listingDetails .listingDescription {
+    margin: 15px 0;
+    font-size: 14pt;
+}
+
+.listing .listingContent .listingDetails .listingPrice {
+    margin: 15px 0;
+    font-size: 28pt;
+}
+
+.listing .listingContent .listingDetails .inStockMarker,
+.listing .listingContent .listingDetails .outOfStockMarker,
+.listing .listingContent .listingDetails .madeToOrderMarker {
+    margin: 0 0 18px;
 }

@@ -37,6 +37,19 @@
     margin-left: 3px;
 }
 
+.inStockMarker:before {
+    content: "In stock";
+}
+
+.inStockMarker {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 2px 5px 3px 5px;
+    font-weight: bold;
+    background: green;
+    color: white;
+}
+
 .outOfStockMarker:before {
     content: "Out of stock";
 }
@@ -47,6 +60,19 @@
     padding: 2px 5px 3px 5px;
     font-weight: bold;
     background: red;
+    color: white;
+}
+
+.madeToOrderMarker:before {
+    content: "Made to order";
+}
+
+.madeToOrderMarker {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 2px 5px 3px 5px;
+    font-weight: bold;
+    background: blue;
     color: white;
 }
 
