@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:http://www.icalmaker.com
+BEGIN:VEVENT
+UID:http://www.icalmaker.com/event/d75274df-4004-4797-9019-528ab53caeb1
+DTSTAMP:20200113T222944Z
+DTSTART:20200315T113000Z
+DTEND:20200315T143000Z
+SUMMARY:Triumph Mayflower Club AGM
+LOCATION:The Triumph Sports Six Club, Main Street, Lubenham, Market Harborough, Leicestershire, LE16 9TF
+DESCRIPTION:
+END:VEVENT
+END:VCALENDAR
