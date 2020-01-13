@@ -34,3 +34,8 @@ h1 {
     z-index: 1;
     width: 75px;
 }
+
+.notice p {
+    top: 6px;
+    line-height: 20px;
+}
