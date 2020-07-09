@@ -29,7 +29,7 @@
         <a href="http://www.triumphmayflowerclub.com/news/2018/03/launchofthenewclubwebsite">
             <img src="https://img.shields.io/badge/launched-march%202018-teal">
         </a>
-        <a href="https://www.github.com/Stack-in-a-box/triumphmayflowerclub.com/releases/latest">
+        <a href="https://www.github.com/Stack-in-a-box/triumphmayflowerclub.com/commits/master">
             <img src="https://img.shields.io/github/last-commit/Stack-in-a-box/triumphmayflowerclub.com?color=blue&label=updated">
         </a>
         <a href="https://www.github.com/Stack-in-a-box/triumphmayflowerclub.com/releases/latest">
