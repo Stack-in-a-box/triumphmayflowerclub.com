@@ -36,7 +36,7 @@
             <img src="https://img.shields.io/github/v/release/Stack-in-a-box/triumphmayflowerclub.com?color=blueviolet&label=version">
         </a>
         <a href="#copyright">
-            <img src="https://img.shields.io/badge/licence-%C2%A9%20copyright-crimson">
+            <img src="https://img.shields.io/badge/licence-%C2%A9-crimson">
         </a>
         <a href="https://www.facebook.com/triumphmayflowerclub">
             <img src="https://img.shields.io/badge/social-facebook-darkred">
