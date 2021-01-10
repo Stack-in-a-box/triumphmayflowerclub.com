@@ -1,10 +1,17 @@
 article h2 {
-    padding-top: 15px;
+    border-bottom: 2px solid #70310096;
+    padding: 15px 0 3px;
     text-align: center;
+    font-size: 21pt;
+    color: #f0ca60;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 table {
     width: 100%;
+    color: #f0ca60;
+    text-shadow: 1.5px 1.5px black;
+    font-size: 10.6pt;
 }
 
 td {
@@ -21,6 +28,7 @@ td:nth-child(1) {
 td:nth-child(2) {
     text-align: left;
     font-style: italic;
+    font-weight: lighter;
 }
 
 #string {
