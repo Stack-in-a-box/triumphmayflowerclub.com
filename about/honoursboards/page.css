@@ -22,3 +22,25 @@ td:nth-child(2) {
     text-align: left;
     font-style: italic;
 }
+
+#string {
+    width: 100%;
+}
+
+#board {
+    position: relative;
+    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.45);
+    margin: -5px 0 5px;
+    padding: 115px 75px 60px;
+    background-image: url(boardtop.png), url(boardbottom.png), url(boardrepeat.jpg);
+    background-position: top, bottom, top;
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-size: 100%;
+}
+
+#board #boardPushpin {
+    position: absolute;
+    width: 80px;
+    top: -126px;
+    left: 301px;
+}
