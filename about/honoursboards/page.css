@@ -1,10 +1,20 @@
-article h2 {
-    border-bottom: 2px solid #70310096;
+article h2,
+article h3 {
     padding: 15px 0 3px;
     text-align: center;
-    font-size: 21pt;
     color: #f0ca60;
     text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+article h2 {
+    margin: 23px 36px;
+    border-bottom: 2px solid #70310096;
+    font-size: 21pt;
+}
+
+article h3 {
+    font-size: 18pt;
+    margin: 12px 36px;
 }
 
 table {
@@ -39,7 +49,7 @@ td:nth-child(2) {
     position: relative;
     box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.45);
     margin: -5px 0 5px;
-    padding: 115px 75px 60px;
+    padding: 115px 36px 60px;
     background-image: url(boardtop.png), url(boardbottom.png), url(boardrepeat.jpg);
     background-position: top, bottom, top;
     background-repeat: no-repeat, no-repeat, repeat;
