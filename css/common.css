@@ -185,6 +185,15 @@ iframe {
     border: none;
 }
 
+del, del a {
+    color: grey;
+}
+
+ins {
+    text-decoration: none;
+    font-style: italic;
+}
+
 #container {
     display: flex;
     flex-direction: column;
