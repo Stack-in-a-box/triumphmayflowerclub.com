@@ -158,6 +158,11 @@ article {
 
 article.noticePage {
     margin: 15px 0 0;
+    width: 100%;
+}
+
+body.updatingPage #paperclip {
+    display: none;
 }
 
 aside {
