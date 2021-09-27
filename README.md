@@ -1,7 +1,7 @@
 <div align="center">
     <h1>
         <img src="readmeicon.png" alt="TMC Emblem" height="23px">
-        <a href="http://www.triumphmayflowerclub.com/">TriumphMayflowerClub.com</a>
+        <a href="https://www.triumphmayflowerclub.com/">TriumphMayflowerClub.com</a>
     </h1>
     <h4><b>New website for the Triumph Mayflower Club, launched in March 2018</b></h4>
     <h4>
@@ -20,13 +20,13 @@
         <a href="#copyright">Copyright</a>
     </h4>
     <h3>
-        <a href="https://www.github.com/andidavies92">
-            <img src="https://img.shields.io/badge/maintainer-%40andidavies92-yellow">
+        <a href="https://www.github.com/andiemmadavies">
+            <img src="https://img.shields.io/badge/maintainer-%40andiemmadavies-yellow">
         </a>
-        <a href="http://www.triumphmayflowerclub.com/">
+        <a href="https://www.triumphmayflowerclub.com/">
             <img src="https://img.shields.io/website?url=http%3A%2F%2Fwww.triumphmayflowerclub.com%2F">
         </a>
-        <a href="http://www.triumphmayflowerclub.com/news/2018/03/launchofthenewclubwebsite">
+        <a href="https://www.triumphmayflowerclub.com/news/2018/03/launchofthenewclubwebsite">
             <img src="https://img.shields.io/badge/launched-march%202018-teal">
         </a>
         <a href="https://www.github.com/Stack-in-a-box/triumphmayflowerclub.com/commits/master">
@@ -44,11 +44,11 @@
     </h3>
 </div>
 
-### [![Website Screenshot](screenshot.png)](http://www.triumphmayflowerclub.com/)
+### [![Website Screenshot](screenshot.png)](https://www.triumphmayflowerclub.com/)
 
 <img src="about/clublogo.png" alt="TMC Logo" height="200px" align="right">
 
-The [Triumph Mayflower Club](http://www.triumphmayflowerclub.com/) is an organisation dedicated to the preservation of classic 1950s car, the Mayflower, by British car manufacturer Triumph. The club itself formed in 1974 and made its initial, limited foray into the World Wide Web back in [2005](http://legacy.triumphmayflowerclub.com/), and then I ([Andi](https://www.github.com/andidavies92), project maintainer) was commissioned in 2017 to create them a new website from scratch when my parents became members. Click [here](http://www.triumphmayflowerclub.com/about) if you’re interested in reading more about the car and the club.
+The [Triumph Mayflower Club](https://www.triumphmayflowerclub.com/) is an organisation dedicated to the preservation of classic 1950s car, the Mayflower, by British car manufacturer Triumph. The club itself formed in 1974 and made its initial, limited foray into the World Wide Web back in [2005](https://legacy.triumphmayflowerclub.com/), and then I ([Andi](https://www.github.com/andiemmadavies), project maintainer) was commissioned in 2017 to create them a new website from scratch when my parents became members. Click [here](https://www.triumphmayflowerclub.com/about) if you’re interested in reading more about the car and the club.
 
 This new website is written in vanilla [HTML5](https://developer.mozilla.org/docs/web/html) for the documents’ markup, [CSS3](https://developer.mozilla.org/docs/web/css) for styling, a small amount of [JavaScript](https://developer.mozilla.org/docs/web/javascript) ([ES6](https://developer.mozilla.org/docs/web/javascript/language_resources)) and is built using [Jekyll](https://www.jekyllrb.com/) as a static site generator to minimise code duplication. It is designed to run in any major “evergreen” browser (i.e. Chromium-based [Microsoft Edge](https://www.microsoft.com/edge), [Google Chrome](https://www.google.co.uk/chrome), [Mozilla Firefox](https://www.mozilla.org/firefox), [Apple Safari](https://www.apple.com/safari) or [Opera](https://www.opera.com/)), desktop or mobile, without issue.
 
@@ -89,12 +89,12 @@ The current hosting situation for the production site is only really suitable fo
 The different hosted versions of the website can be found at the following locations, where the canary server is the automatically-generated [GitHub Pages](https://pages.github.com/) site based-on the latest `master`, the staging area is a subdomain of the live website that we deploy to manually when we want to test-out new features and the production site is the current publicly-available website (also deployed to manually):
 
 * 🐥 **Canary:** https://stack-in-a-box.github.io/triumphmayflowerclub.com
-* 🧪 **Staging:** http://beta.triumphmayflowerclub.com/
-* 🌐 **Production:** http://www.triumphmayflowerclub.com/
+* 🧪 **Staging:** https://beta.triumphmayflowerclub.com/
+* 🌐 **Production:** https://www.triumphmayflowerclub.com/
 
 Oh, and just for the fun of it, here’s what the old website looked like for comparison!
 
-* ☠ **Legacy:** http://legacy.triumphmayflowerclub.com/
+* ☠ **Legacy:** https://legacy.triumphmayflowerclub.com/
 
 ## Versions
 
@@ -140,17 +140,17 @@ This is a non-exhaustive list of the things I’d like to add in future developm
 
 ### Content
 
-* A complete [archive](http://www.triumphmayflowerclub.com/documents/flowerpowers) of every issue of [the club’s magazine](http://www.triumphmayflowerclub.com/history/club#flowerPower).
-* A comprehensive collection of [technical documentation and guides](http://www.triumphmayflowerclub.com/documents/technical).
-* Historical [annual general meeting minutes](http://www.triumphmayflowerclub.com/documents/agms) made available.
-* Library of high-quality historical [photos](http://www.triumphmayflowerclub.com/photos).
-* Plenty of members’ [photos](http://www.triumphmayflowerclub.com/photos) to be added.
+* A complete [archive](https://www.triumphmayflowerclub.com/documents/flowerpowers) of every issue of [the club’s magazine](https://www.triumphmayflowerclub.com/history/club#flowerPower).
+* A comprehensive collection of [technical documentation and guides](https://www.triumphmayflowerclub.com/documents/technical).
+* Historical [annual general meeting minutes](https://www.triumphmayflowerclub.com/documents/agms) made available.
+* Library of high-quality historical [photos](https://www.triumphmayflowerclub.com/photos).
+* Plenty of members’ [photos](https://www.triumphmayflowerclub.com/photos) to be added.
 
 ### Features
 
 * Simple, [client-powered search](https://www.github.com/Stack-in-a-box/siab-search).
 * [Members-only area](https://www.github.com/Stack-in-a-box/triumphmayflowerclub.com/tree/members-only-area).
-* A [forum system](http://www.triumphmayflowerclub.com/forum).
+* A [forum system](https://www.triumphmayflowerclub.com/forum).
 * Members directory.
 * Mobile-optimised layout.
 * Bespoke [CMS](https://en.wikipedia.org/wiki/Content_management_system)-style authoring tools.
@@ -346,10 +346,10 @@ To deploy either the staging or live site, perform the following:
 
 ## Contact
 
-If you need to get in-touch with me ([Andi Emma Davies](https://www.github.com/andidavies92) – lead developer), please do so at the following email address: [andidavies92@outlook.com](mailto:andidavies92@outlook.com?subject=Triumph%20Mayflower%20Club%20Website)
+If you need to get in-touch with me ([Andi Emma Davies](https://www.github.com/andiemmadavies) – lead developer), please do so at the following email address: [andi@stackinabox.co.uk](mailto:andi@stackinabox.co.uk?subject=Triumph%20Mayflower%20Club%20Website)
 
 ## Copyright
 
-Copyright © Stack-in-a-box Software 2017–2020
+Copyright © Stack-in-a-box Software 2017–2021
 
-Copyright © Triumph Mayflower Club 2005-2020
+Copyright © Triumph Mayflower Club 2005-2021
