@@ -340,19 +340,19 @@ ins {
 #chairs {
     position: absolute;
     top: 130px;
-    left: 395px;
+    left: 335px;
+    width: 350px;
+    text-align: center;
 }
 
 #chairs #roles {
-    margin-left: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-#chairs #roles span + span {
-    margin-left: 57px;
-}
-
-#chairs #names a + a {
-    margin-left: 48px;
+#chairs #names {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #socials {
