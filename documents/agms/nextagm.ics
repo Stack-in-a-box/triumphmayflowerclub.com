@@ -2,12 +2,12 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:http://www.icalmaker.com
 BEGIN:VEVENT
-UID:http://www.icalmaker.com/event/0889cd26-eae3-49b7-a76e-cfd892d1d167
-DTSTAMP:20220122T111202Z
-DTSTART:20220313T111500Z
-DTEND:20220313T141500Z
+UID:http://www.icalmaker.com/event/468ade5d-b22f-4736-b153-5770eb504a59
+DTSTAMP:20230308T225810Z
+DTSTART:20230416T120000Z
+DTEND:20230416T153000Z
 SUMMARY:Triumph Mayflower Club AGM
-LOCATION:The Triumph Sports Six Club, Main Street, Lubenham, Market Harborough, Leicestershire, LE16 9TF
-DESCRIPTION:
+LOCATION:Leicestershire Scout Headquarters, 9 Oak Spinney Park, Leicester, LE3 3AW
+DESCRIPTION:The meeting can also be joined virtually via this Google Meet call: https://meet.google.com/ofe-jxrj-hpy
 END:VEVENT
 END:VCALENDAR
