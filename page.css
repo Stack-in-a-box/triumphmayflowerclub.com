@@ -35,4 +35,5 @@ h1 {
     width: 75px;
 }
 
-.notice p { line-height: 23px; }
+#notice1 p { line-height: 18px; top: 12px; }
+#notice2 p { line-height: 23px; }
