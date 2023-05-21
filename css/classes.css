@@ -114,3 +114,7 @@
 .pagination span {
     font-size: 15pt;
 }
+
+ol.letteredOrderedList {
+    list-style: lower-alpha;
+}
