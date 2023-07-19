@@ -1,9 +1,9 @@
-article section {
+article section#forumWebsite section {
     display: flex;
     margin-bottom: 30px;
 }
 
-article section img {
+article section#forumWebsite section img {
     width: 180px;
     margin-right: 20px;
 }
