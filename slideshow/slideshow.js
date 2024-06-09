@@ -1,6 +1,5 @@
 $(document).ready(() => {
     const imageDetails = [
-        { registration: "ODV 692", caption: "John Castle’s Mayflower" },
         { registration: "KSK 160", caption: "Mike Clement’s Mayflower" },
         { registration: "NKA 947", caption: "Paul Burgess’ Mayflower" },
         { registration: "XAS 929", caption: "John and Barbara Albion’s Mayflower" },
