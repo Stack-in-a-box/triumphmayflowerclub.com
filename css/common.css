@@ -278,6 +278,7 @@ ins {
     display: flex;
     align-items: center;
     padding: 10px 12px 0 12px;
+    font-size: 15px;
 }
 
 #copyright {
