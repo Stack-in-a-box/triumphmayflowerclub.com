@@ -1,0 +1,98 @@
+---
+title: Send Email
+section: contact
+customstyles: true
+scripts: <script src="/libraries/jquery-3.6.0.slim.min.js" defer></script>
+---
+
+<main>
+    <article>
+        <ol id="breadcrumb">
+            <li>
+                <a href="{{ site.baseurl }}/">Home</a>
+            </li>
+            <li>
+                <a href="{{ site.baseurl }}/contact">Contact</a>
+            </li>
+            <li>Send Email</li>
+        </ol>
+        <div id="content">
+            <h1>Send Email</h1>
+            <p>If you would like to get in-touch with the club, you can now do so via this new email form. You can also specify what the query is about / who you want the query directed to using the drop-down list below.</p>
+            <form id="form" action="https://formspree.io/f/xblrvaww" method="post" accept-charset="utf-8">
+                <fieldset>
+                    <label>
+                        <h2>Query purpose / recipient</h2>
+                        <select
+                            id="purpose"
+                            required="true"
+                            placeholder="Query purpose / recipient"
+                        >
+                            <option value="general">General enquiry (to James Chalk)</option>
+                            <option value="chair">For the chairperson (to James Chalk)</option>
+                            <option value="vicechair">For the vice chairperson (to Richard Hughes)</option>
+                            <option value="secretary">For the secretary (to John Corley)</option>
+                            <option value="treasurer">For the treasurer (to Paul Norton)</option>
+                            <option value="membership">Membership (to John Corley)</option>
+                            <option value="rallies">Rallies (to James Chalk)</option>
+                            <option value="magazine">Magazine (to Barbara Davies)</option>
+                            <option value="spares">Spares (to James Chalk)</option>
+                            <option value="regalia">Regalia (to James Chalk)</option>
+                            <option value="website">Website (to Rob Davies)</option>
+                        </select>
+                    </label>
+                    <label>
+                        <h2>Your full name</h2>
+                        <input
+                            id="name"
+                            name="name"
+                            type="text"
+                            required="true"
+                            placeholder="Your full name"
+                        >
+                        <span><b>E.g.</b> <i>Joe Bloggs</i></span>
+                    </label>
+                    <label>
+                        <h2>Your email address</h2>
+                        <input
+                            id="email"
+                            name="_replyto"
+                            type="email"
+                            required="true"
+                            placeholder="Your email address"
+                        >
+                        <span><b>E.g.</b> <i>joe.bloggs@example.com</i></span>
+                    </label>
+                    <label>
+                        <h2>Subject</h2>
+                        <input
+                            id="subject"
+                            name="_subject"
+                            type="text"
+                            required="true"
+                            placeholder="Email subject"
+                        >
+                        <span><b>E.g.</b> <i>Car for Sale Advert</i></span>
+                    </label>
+                    <label>
+                        <h2>Your query…</h2>
+                        <textarea
+                            name="message"
+                            required="true"
+                            placeholder="Your query…"
+                        ></textarea>
+                    </label>
+                </fieldset>
+                <div id="submitContainer">
+                    <input
+                        id="submit"
+                        type="submit"
+                        value="Send email"
+                    >
+                </div>
+            </form>
+        </div>
+    </article>
+    <script>const siteBaseUrl = "{{ site.baseurl }}";</script>
+    <script src="{{ site.baseurl }}/contact/email/email.js" defer></script>
+</main>

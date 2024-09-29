@@ -1,0 +1,52 @@
+article {
+    width: 100%;
+    margin-right: unset;
+}
+
+form#form fieldset {
+    border: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+form#form fieldset label,
+form#form fieldset label input,
+form#form fieldset label select {
+    font-family: "europa";
+    padding: 5px 5px 4px;
+}
+
+form#form fieldset label:first-child h2 { margin-top: 0; }
+
+form#form fieldset label input#name { min-width: 250px; }
+form#form fieldset label input#email { min-width: 325px; }
+form#form fieldset label input#subject { min-width: 450px; }
+
+form#form fieldset label span {
+    margin-left: 5px;
+    font-size: 10pt;
+    color: darkgrey;
+}
+
+form#form fieldset label textarea {
+    width: calc(100% - 10px);
+    min-height: 250px;
+
+    padding: 5px;
+
+    font-family: europa;
+}
+
+form#form div#submitContainer {
+    display: flex;
+    justify-content: center;
+}
+
+form#form div#submitContainer input#submit {
+    margin-top: 17px;
+    padding: 5px 10px;
+
+    font-family: europa;
+    font-size: 15pt;
+}
