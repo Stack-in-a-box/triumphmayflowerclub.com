@@ -20,8 +20,8 @@
         <a href="#copyright">Copyright</a>
     </h4>
     <h3>
-        <a href="https://www.github.com/andiemmadavieswilcox">
-            <img src="https://img.shields.io/badge/maintainer-%40andiemmadavieswilcox-yellow">
+        <a href="https://www.github.com/emmadavieswilcox">
+            <img src="https://img.shields.io/badge/maintainer-%40emmadavieswilcox-yellow">
         </a>
         <a href="https://www.triumphmayflowerclub.com/">
             <img src="https://img.shields.io/website?url=http%3A%2F%2Fwww.triumphmayflowerclub.com%2F">
@@ -48,7 +48,7 @@
 
 <img src="about/clublogo.png" alt="TMC Logo" height="200px" align="right">
 
-The [Triumph Mayflower Club](https://www.triumphmayflowerclub.com/) is an organisation dedicated to the preservation of classic 1950s car, the Mayflower, by British car manufacturer Triumph. The club itself formed in 1974 and made its initial, limited foray into the World Wide Web back in [2005](https://legacy.triumphmayflowerclub.com/), and then I ([Andi](https://www.github.com/andiemmadavieswilcox), project maintainer) was commissioned in 2017 to create them a new website from scratch when my parents became members. Click [here](https://www.triumphmayflowerclub.com/about) if you’re interested in reading more about the car and the club.
+The [Triumph Mayflower Club](https://www.triumphmayflowerclub.com/) is an organisation dedicated to the preservation of classic 1950s car, the Mayflower, by British car manufacturer Triumph. The club itself formed in 1974 and made its initial, limited foray into the World Wide Web back in [2005](https://legacy.triumphmayflowerclub.com/), and then I ([Emma](https://www.github.com/emmadavieswilcox), project maintainer) was commissioned in 2017 to create them a new website from scratch when my parents became members. Click [here](https://www.triumphmayflowerclub.com/about) if you’re interested in reading more about the car and the club.
 
 This new website is written in vanilla [HTML5](https://developer.mozilla.org/docs/web/html) for the documents’ markup, [CSS3](https://developer.mozilla.org/docs/web/css) for styling, a small amount of [JavaScript](https://developer.mozilla.org/docs/web/javascript) ([ES6](https://developer.mozilla.org/docs/web/javascript/language_resources)) and is built using [Jekyll](https://www.jekyllrb.com/) as a static site generator to minimise code duplication. It is designed to run in any major “evergreen” browser (i.e. Chromium-based [Microsoft Edge](https://www.microsoft.com/edge), [Google Chrome](https://www.google.co.uk/chrome), [Mozilla Firefox](https://www.mozilla.org/firefox), [Apple Safari](https://www.apple.com/safari) or [Opera](https://www.opera.com/)), desktop or mobile, without issue.
 
@@ -126,7 +126,7 @@ There have been two major releases published so far, which are listed below with
   * An archive-style system for organising our ever-growing list of news articles.
   * Finished and integrated the graphical assets that were incomplete by the release of v1.0.
   * Added the remaining content to the footer, also originally intended for v1.0.
-  * New Facebook page created by Andi and Mark Smith (publicity officer).
+  * New Facebook page created by Emma and Mark Smith (publicity officer).
   * News article template Word document, to aid contributors in submitting news content.
   * Editable membership forms as PDFs, a step towards signing-up completely online.
   * Full GDPR compliance and supporting news article.
@@ -346,10 +346,10 @@ To deploy either the staging or live site, perform the following:
 
 ## Contact
 
-If you need to get in-touch with me ([Andi Emma Davies-Wilcox](https://www.github.com/andiemmadavieswilcox) – lead developer), please do so at the following email address: [andi@stackinabox.co.uk](mailto:andi@stackinabox.co.uk?subject=Triumph%20Mayflower%20Club%20Website)
+If you need to get in-touch with me ([Emma Davies-Wilcox](https://www.github.com/emmadavieswilcox) – lead developer), please do so at the following email address: [emma@stackinabox.co.uk](mailto:emma@stackinabox.co.uk?subject=Triumph%20Mayflower%20Club%20Website)
 
 ## Copyright
 
-Copyright © Stack-in-a-box Software 2017–2021
+Copyright © Stack-in-a-box Software 2017–2025
 
-Copyright © Triumph Mayflower Club 2005-2021
+Copyright © Triumph Mayflower Club 2005-2025

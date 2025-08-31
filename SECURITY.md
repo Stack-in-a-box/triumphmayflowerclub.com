@@ -14,4 +14,4 @@ The only version being actively supported is the version that is currently deplo
 
 ## Reporting a vulnerability
 
-If you discover a vulnerability with either the currently supported version or the upcoming v2 rewrite, send me an email on [andi@stackinabox.co.uk](mailto:andi@stackinabox.co.uk?subject=TMC%20Website%20Vulnerability) and I’ll be in-touch to discuss a resolution.
+If you discover a vulnerability with either the currently supported version or the upcoming v2 rewrite, send me an email on [emma@stackinabox.co.uk](mailto:emma@stackinabox.co.uk?subject=TMC%20Website%20Vulnerability) and I’ll be in-touch to discuss a resolution.
